@@ -1,0 +1,1222 @@
+[
+  {
+    "id": 1,
+    "title": "C.E.O.s Want Their Companies to Adopt A.I. But Do They Get It Themselves?",
+    "summary": "What are different companies doing to force their senior executives to use Gen AI: from inviting junior employees to senior meetings, to having Friday lunches dedicated to sharing Gen AI uses",
+    "link": "https://www.nytimes.com/2025/08/16/business/ceos-adopt-ai.html?unlocked_article_code=1.e08.qzG8.rjPF3c51WQzj&smid=url-share&ref=thediff.co",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "ceos-want-their-companies-to-adopt-ai-but-do-they-get-it-the",
+    "month": ""
+  },
+  {
+    "id": 2,
+    "title": "The Bitter Lesson vs The Garbage Can",
+    "summary": "It will take some time for AI to make a difference to enterprise productivity, because enterprises tend to be chaotic and unaligned. AI agents will struggle to understand the mess and to add value at the right places.",
+    "link": "https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-bitter-lesson-vs-the-garbage-can",
+    "month": ""
+  },
+  {
+    "id": 3,
+    "title": "You think you are AI-first, but you probably aren't",
+    "summary": "\"What Venetian merchants and the railroad pioneers teach us about our current moment in AI\"",
+    "link": "https://platforms.substack.com/p/you-think-you-are-ai-first-but-you",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "you-think-you-are-ai-first-but-you-probably-arent",
+    "month": ""
+  },
+  {
+    "id": 4,
+    "title": "US export restrictions on AI chips: Implications for India",
+    "summary": "AI chips are being seen as a part of national security by many countries. Economist Ajay Shah looks at the implications for India.",
+    "link": "https://www.mayin.org/ajayshah/MEDIA/2025/ai_chips_implications.html",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "us-export-restrictions-on-ai-chips-implications-for-india",
+    "month": ""
+  },
+  {
+    "id": 5,
+    "title": "Can AI Master the Art of Humor?",
+    "summary": "\"Can artificial intelligence be funny, or is comedy a uniquely human trait? In this TEDx talk, New Yorker cartoonist Bob Mankoff explores the art of humor, the evolution of AI and what happens when the two collide\"",
+    "link": "https://www.youtube.com/watch?v=pMgqSJP9dN8",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "can-ai-master-the-art-of-humor",
+    "month": ""
+  },
+  {
+    "id": 6,
+    "title": "Microsoft researchers have revealed the 40 jobs most exposed to AI—and even teachers make the list",
+    "summary": "Microsoft researchers have published a paper in which they \"[analyze] the work activities people do with AI, how successfully and broadly those activities are done, and combine that with data on what occupations do those activities.\" Today's article summarizes this paper. Please read Navin's note at...",
+    "link": "https://docs.google.com/document/d/1z1f-5-Ry1FVzyYm1ngGE9LyrHRDjFtif6VC3a6PE5HQ/edit?usp=sharing",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "microsoft-researchers-have-revealed-the-40-jobs-most-exposed",
+    "month": ""
+  },
+  {
+    "id": 7,
+    "title": "What Happened When I Tried to Replace Myself with ChatGPT in My English Classroom",
+    "summary": "In this piece, a professor of English bravely compares himself against AI tools in the classroom in a series of experiments. (Since the original piece is long, we’ve extracted some interesting sections to give you a sense of how this unfolded. The summaries are based on the entire article.) \nAsk you...",
+    "link": "https://docs.google.com/document/d/1UkAfVtD2R1GqUkOPi46EtqKn3AFnWwameBnBixEPTA4/edit?usp=sharing",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "what-happened-when-i-tried-to-replace-myself-with-chatgpt-in",
+    "month": ""
+  },
+  {
+    "id": 8,
+    "title": "Does the UK’s liver transplant matching algorithm systematically exclude younger patients?",
+    "summary": "What happens when more and more algorithmic decision-making gets baked into policy-making? This piece talks about UK’s liver allocation algorithm, where younger people seem to be systematically discriminated against.",
+    "link": "https://www.aisnakeoil.com/p/does-the-uks-liver-transplant-matching",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "does-the-uks-liver-transplant-matching-algorithm-systematica",
+    "month": ""
+  },
+  {
+    "id": 9,
+    "title": "The Lawyer and The Secretary Travel To The Future",
+    "summary": "When thinking about what jobs AI will take away, the economics concept of comparative advantage will come in handy. Even if AI is capable of doing a task better than humans, Noah Smith points out that it might still make sense for humans to continue doing those jobs. \nWe have two links today: Ashish...",
+    "link": "https://econforeverybodyblog.wordpress.com/2024/03/22/the-lawyer-and-the-secretary-travel-to-the-future/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-lawyer-and-the-secretary-travel-to-the-future",
+    "month": ""
+  },
+  {
+    "id": 10,
+    "title": "Andrej Karpathy on the importance of Gen AI video generation",
+    "summary": "Andrej Karpathy* has this short but important article about how Gen AI video generation can be a game changer, and we all need to pay more attention to it. To drive home the point, Navin used Gemini's Veo 3 video generation to create a video which attempts to say that you can drive up engagement sig...",
+    "link": "https://docs.google.com/document/d/1Z-wvfavLjLBlRKIpMT7XJ6yEFoxTat74hGSMFbHErCQ",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "andrej-karpathy-on-the-importance-of-gen-ai-video-generation",
+    "month": ""
+  },
+  {
+    "id": 11,
+    "title": "LLMs Try to Please You ... and That's a Problem",
+    "summary": "LLMs have a “sycophancy bias”, defined as “is the tendency of an AI model to excessively agree with or flatter the user, often sacrificing accuracy or truthfulness in order to gain favor or maintain harmony.” This bias will result in you getting wrong and sometimes dangerous answers. And avoiding th...",
+    "link": "https://aiiq.substack.com/p/llms-try-to-please-you-and-thats",
+    "theme": "Trust & Safety in AI",
+    "filename": "llms-sycophancy.html",
+    "slug": "llms-try-to-please-you-and-thats-a-problem",
+    "month": ""
+  },
+  {
+    "id": 12,
+    "title": "Hollywood’s being reshaped by generative AI. What does that mean for screenwriters?",
+    "summary": "Screenwriters and filmmakers debate AI's impact on their craft.",
+    "link": "https://archive.ph/79R8o",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "hollywoods-being-reshaped-by-generative-ai-what-does-that-me",
+    "month": ""
+  },
+  {
+    "id": 13,
+    "title": "Aaron Levie on AI in the Enterprise",
+    "summary": "How the nature of enterprises will change due to AI, according to Aaron Levie, CEO of enterprise content management platform Box.com. He talks about which roles in the company become more important, how the nature of work of each role changes, and what new activities (like data cleaning) need to be ...",
+    "link": "https://docs.google.com/document/d/1I0Zzz9pdtFjGtdnfaWmpSkf8iVHWmfhfTCyDHdJDsDg/edit?usp=sharing",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "aaron-levie-on-ai-in-the-enterprise",
+    "month": ""
+  },
+  {
+    "id": 14,
+    "title": "Can AI Chatbots Worsen Psychosis and Cause Delusions?",
+    "summary": "\"How could an AI chatbot actually cause delusional thinking in someone without pre-existing psychosis?\"?",
+    "link": "https://www.psychologytoday.com/us/blog/psych-unseen/202507/can-ai-chatbots-worsen-psychosis-and-cause-delusions",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "can-ai-chatbots-worsen-psychosis-and-cause-delusions",
+    "month": ""
+  },
+  {
+    "id": 15,
+    "title": "Nuance is the new differentiator",
+    "summary": "\"When every team has access to the same AI tools, your advantage will be in knowing what wasn’t said.\"",
+    "link": "https://foundingfuel.com/article/nuance-is-the-new-differentiator/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "nuance-is-the-new-differentiator",
+    "month": ""
+  },
+  {
+    "id": 16,
+    "title": "ChatGPT is a blurry JPEG of the web",
+    "summary": "Ted Chiang, a famous sci-fi author, gives his explanation of how LLMs work. Although the article is from 2023, the core idea remains relevant. (Plus, whenever a good sci-fi author writes about technology, it is worth reading because they see more clearly, and write so well)",
+    "link": "https://archive.ph/iHSdS",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "chatgpt-is-a-blurry-jpeg-of-the-web",
+    "month": ""
+  },
+  {
+    "id": 17,
+    "title": "How Long Contexts Fail",
+    "summary": "Bigger, newer models offer long contexts—even a million tokens. This was earlier believed to be a magic bullet, where everything (entire book; entire codebase; entire email history) could be dumped in the question to an LLM. But it doesn't work. This article talks about how long context fails. (If y...",
+    "link": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "how-long-contexts-fail",
+    "month": ""
+  },
+  {
+    "id": 18,
+    "title": "What Jimi Hendrix Teaches Us About Generative AI",
+    "summary": "Tim Harford describes how established musicians ignored a new technology for making a guitar sound different, and a young kid embraced it and became one of the greatest guitarists ever. And what that should teach you all about Gen AI.",
+    "link": "https://timharford.com/2025/08/what-jimi-hendrix-teaches-us-about-generative-ai/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "what-jimi-hendrix-teaches-us-about-generative-ai",
+    "month": ""
+  },
+  {
+    "id": 19,
+    "title": "I got downvoted to hell telling programmers it’s ok to use LLMs OR How I learned to stop worrying and love “vibe coding”",
+    "summary": "Advice from a Silicon Valley founder: It is OK to use LLMs. He has different advice for seniors vs juniors. \n(Particularly selective readers can skip the first half of the post and read from \"All I can do is put down on paper how I’m navigating this change\")",
+    "link": "https://medium.com/@chetan_51670/i-got-downvoted-to-hell-telling-programmers-its-ok-to-use-llms-b36eec1ff7a8",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "i-got-downvoted-to-hell-telling-programmers-its-ok-to-use-ll",
+    "month": ""
+  },
+  {
+    "id": 20,
+    "title": "The Only Trait for Success in the AI Era",
+    "summary": "Po-Shen Loh is a CMU professor who coached the US International Maths Olympiad team. He is also into social entrepreneurship, with an interesting venture that involves high-school math students and comedians. In this video, he gives his take on what could be valuable in the future.",
+    "link": "https://www.youtube.com/watch?v=xWYb7tImErI",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "the-only-trait-for-success-in-the-ai-era",
+    "month": ""
+  },
+  {
+    "id": 21,
+    "title": "Chinese universities want students to use more AI, not less",
+    "summary": "In Universities in the West (and in India), AI is being seen as a threat to manage. In China, it's being seen as a tool to master.",
+    "link": "https://www.technologyreview.com/2025/07/28/1120747/chinese-universities-ai-use/",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "chinese-universities-want-students-to-use-more-ai-not-less",
+    "month": ""
+  },
+  {
+    "id": 22,
+    "title": "Bag of Words Have Mercy on Us",
+    "summary": "A psychologist explains why we think of AI as a human and the problems with doing this. At the beginning, it feels like he's oversimplifying the situation, but there are deeper insights as you progress through the article. The links to further reading are fascinating.",
+    "link": "https://www.experimental-history.com/p/bag-of-words-have-mercy-on-us",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "bag-of-words-have-mercy-on-us",
+    "month": ""
+  },
+  {
+    "id": 23,
+    "title": "AI Will Turn Our Lives into The Truman Show",
+    "summary": "\"Large language models can create muddled, misinformed multiverses\"",
+    "link": "https://www.scientificamerican.com/article/ai-will-turn-our-lives-into-the-truman-show/",
+    "theme": "Evaluating AI Outputs",
+    "filename": null,
+    "slug": "ai-will-turn-our-lives-into-the-truman-show",
+    "month": ""
+  },
+  {
+    "id": 24,
+    "title": "What It’s Like to Brainstorm with a Bot",
+    "summary": "Researchers in academia have begun using Gen AI as research companions and even collaborators, to help with brainstorming, idea generation, and more. While some see a danger that humans will stop thinking altogether, this New Yorker article strives to make the case that the technology will help you ...",
+    "link": "https://archive.ph/GMgdW",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "what-its-like-to-brainstorm-with-a-bot",
+    "month": ""
+  },
+  {
+    "id": 25,
+    "title": "Disposable Code Is Here to Stay, but Durable Code Is What Runs the World",
+    "summary": "\"Is writing code a valuable skill that people should practice and build up, or on the way to becoming obsolete; maybe even a skill set that dates you, like cursive writing?\"\n\nSoftware development is grappling with the use of AI tools. This piece talks about a distinction between modes of development...",
+    "link": "https://www.honeycomb.io/blog/disposable-code-is-here-to-stay",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "disposable-code-is-here-to-stay-but-durable-code-is-what-run",
+    "month": ""
+  },
+  {
+    "id": 26,
+    "title": "The Smartest People I Know Are Obsessed With a Skill Many Were Told Is Useless",
+    "summary": "This article argues that \"Why remember what I can just Google or ask ChatGPT?\" is a wrong attitude to life. It goes into the neuroscience of why you need to memorize things (\"rote learning\") even in the age of AI.",
+    "link": "https://archive.is/20250902061507/https://evakeiffenheim.medium.com/the-smartest-people-i-know-are-obsessed-with-a-skill-many-were-told-is-useless-b9416c6fb856",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "the-smartest-people-i-know-are-obsessed-with-a-skill-many-we",
+    "month": ""
+  },
+  {
+    "id": 27,
+    "title": "How not to lose your job to AI",
+    "summary": "Mass automation, falling wages, and job losses are a real possibility. But when automation reduces the value of skills that can be automated, it significantly increases the value of skills which can't be automated. What skills are most likely to increase in value as AI progresses?\n\nThis is a very lo...",
+    "link": "https://80000hours.org/agi/guide/skills-ai-makes-valuable/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "how-not-to-lose-your-job-to-ai",
+    "month": ""
+  },
+  {
+    "id": 28,
+    "title": "Artificial Intelligence through the Samaaj-Sarkaar-Bazaar Lens: A Framework for Balanced Regulation",
+    "summary": "\"Samaaj-Sarkaar-Bazaar\" (society, state, market) is a policy lens popularised by Rohini Nilekani. A policy paper applies it to study AI initiatives and regulations, especially in India.",
+    "link": "https://takshashila.org.in/content/publications/20250325-Artificial-Intelligence-through-the-Samaaj-Sarkaar-Bazaar-Lens.html",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "artificial-intelligence-through-the-samaaj-sarkaar-bazaar-le",
+    "month": ""
+  },
+  {
+    "id": 29,
+    "title": "Tokens are getting more expensive",
+    "summary": "Should Gen AI products offer flat subscription pricing with unlimited usage, or charge usage-based pricing? This is a short but dense and interesting analysis of the economics of Gen AI companies/products. The pros and cons of the different approaches will have a big impact on how the AI revolution ...",
+    "link": "https://ethanding.substack.com/p/ai-subscriptions-get-short-squeezed",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "tokens-are-getting-more-expensive",
+    "month": ""
+  },
+  {
+    "id": 30,
+    "title": "Why 95% of AI Commentary Fails",
+    "summary": "In 2025, a paper from MIT went viral in the news with its conclusion that \"95% of enterprise AI efforts had failed”. Hang on, says the author of this article who actually read the paper. He finds 1) the paper makes no such claims, 2) it makes different claims which are less sensational but interesti...",
+    "link": "https://aiascendant.com/p/why-95-of-ai-commentary-fails",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "why-95-of-ai-commentary-fails",
+    "month": ""
+  },
+  {
+    "id": 31,
+    "title": "AI That Works for Workers: Survey Results",
+    "summary": "How do average employees view AI? Are they hopeful or worried? Do they trust their employers to use AI in ways that will benefit the workers? Does this differ by industry? Some fascinating insights into how people are viewing this change. \n\nThis article is longer than usual, but you can skip directl...",
+    "link": "https://kyla.substack.com/p/ai-that-works-for-workers-survey",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "ai-that-works-for-workers-survey-results",
+    "month": ""
+  },
+  {
+    "id": 32,
+    "title": "Why Radiology AI Didn’t Work and What Comes Next",
+    "summary": "Radiology was considered one of the easiest domains in which AI would succeed. However, that has not happened. In this piece, a product manager at a radiology AI company examines the reasons why the AI didn't live up to expectations. \n\nWhile a lot of the reasons are specific to the healthcare indust...",
+    "link": "https://www.outofpocket.health/p/why-radiology-ai-didnt-work-and-what-comes-next",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "why-radiology-ai-didnt-work-and-what-comes-next",
+    "month": ""
+  },
+  {
+    "id": 33,
+    "title": "Is AI a Bubble",
+    "summary": "AI companies are getting unprecedented amounts of investments. Is this a bubble, like the housing bubble of 2008, the dotcom bubble of late 1990s, or the railway bubble before that? \n\nThis piece from Exponential View digs into the economic history of technology revolutions to try to find an answer b...",
+    "link": "https://www.exponentialview.co/p/is-ai-a-bubble",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "is-ai-a-bubble",
+    "month": ""
+  },
+  {
+    "id": 34,
+    "title": "Are 90% of Programs Being Written By AI?",
+    "summary": "No, 90% of programs are not currently being written by AI. But *some* good, senior programmers are writing 90% of their code using AI. This article answers the questions, 1) why does this matter, 2) to you even if you're not a programmer, and 3) the different ways in which AI is being used for progr...",
+    "link": "https://aiiq.substack.com/p/are-90-of-programs-being-written",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "are-90-of-programs-being-written-by-ai",
+    "month": ""
+  },
+  {
+    "id": 35,
+    "title": "Most Work is Translation (And LLMs are the first universal translators for work.)",
+    "summary": "This article first makes the case that most knowledge work is \"translation\" from one type of information to another. And then goes on to point out that LLMs, which were invented to do translations, are very good at translations of all those kinds, so asks you to consider what this means for individu...",
+    "link": "https://aparnacd.substack.com/p/most-work-is-translation",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "most-work-is-translation-and-llms-are-the-first-universal-tr",
+    "month": ""
+  },
+  {
+    "id": 36,
+    "title": "Curious About Consciousness? Ask the Self-Aware Machines",
+    "summary": "This roboticist is building new minds to crack the mystery of consciousness, one self-aware arm at a time.",
+    "link": "https://www.quantamagazine.org/curious-about-consciousness-ask-the-self-aware-machines-20190711/",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "curious-about-consciousness-ask-the-self-aware-machines",
+    "month": ""
+  },
+  {
+    "id": 37,
+    "title": "Could AI slow science?",
+    "summary": "\"It’s a common-sense view that AI will speed science greatly as it gets adopted in every part of the scientific pipeline. But many early common-sense predictions about the impact of a new technology on an existing institution proved badly wrong\".\n\nThis is a loooong piece, so consider the short audio...",
+    "link": "https://www.aisnakeoil.com/p/could-ai-slow-science",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "could-ai-slow-science",
+    "month": ""
+  },
+  {
+    "id": 38,
+    "title": "In Search Of AI Psychosis",
+    "summary": "Scott Alexander is a practicing psychiatrist, and one of best science and rationality bloggers. He does an in-depth coverage of the different situations in which AI could be said to have \"caused\" psychosis in patients, and whether AI is to blame in each case, and what we should be concerned about.",
+    "link": "https://www.astralcodexten.com/p/in-search-of-ai-psychosis",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "in-search-of-ai-psychosis",
+    "month": ""
+  },
+  {
+    "id": 39,
+    "title": "Making AI Work: Leadership, Lab, and Crowd",
+    "summary": "Incorporating AI effectively in enterprises poses new challenges for leadership. Traditional top-down patterns will not work. Ethan Mollick suggests a new pattern, \"Leadership, Lab, and Crowd\".",
+    "link": "https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "making-ai-work-leadership-lab-and-crowd",
+    "month": ""
+  },
+  {
+    "id": 40,
+    "title": "Whose job is safe from AI?",
+    "summary": "“I’ve sort of convinced myself that the safest job in the world is probably gardener”",
+    "link": "https://timharford.com/2025/07/whose-job-is-safe-from-ai/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "whose-job-is-safe-from-ai",
+    "month": ""
+  },
+  {
+    "id": 41,
+    "title": "Towards an AI-augmented textbook",
+    "summary": "Google used their AI tools to convert any PDF/text into an interactive multimedia textbook, and then did some research on how it affected students perceptions and learnings. This new way could replace textbooks. \n\nToday's piece is a short summary, but here's a link to the full paper if you want deta...",
+    "link": "https://docs.google.com/document/d/1AY_NX4DlBVAJpBN1BxKTe4PZt9OzZEvmGV1vMVGTUwI",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "towards-an-ai-augmented-textbook",
+    "month": ""
+  },
+  {
+    "id": 42,
+    "title": "I am voice-pilled",
+    "summary": "Reid Hoffman, founder of Linkedin, argues that (for the first time) technology has become good enough that you can (and should) just talk to your LLM (and your computer). He expects this to be the dominant form of user-computer input and as a result, he expects offices to be remodeled keeping in min...",
+    "link": "https://docs.google.com/document/d/1bQVq29lDw-D4ICKbU5kGRmmMXVPD9ec4b2g7rEm7eys",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "i-am-voice-pilled",
+    "month": ""
+  },
+  {
+    "id": 43,
+    "title": "The Bitter Lesson",
+    "summary": "The Bitter Lesson, from 2019, is one of the most influential papers in the AI community. It is just two pages, and written so that anyone can understand it. The bitter lesson remains one of the important ways of thinking about (and predicting the future) of AI technology—it changed how the industry ...",
+    "link": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-bitter-lesson",
+    "month": ""
+  },
+  {
+    "id": 44,
+    "title": "Art critic Jerry Saltz: A “Francis Bacon of AI art” will emerge, but today’s work falls flat",
+    "summary": "One of the battlegrounds of AI has been the world of visual art. In this piece, an art critic and an artist who uses AI, trade (verbal) blows.",
+    "link": "https://bigthink.com/high-culture/art-critic-jerry-saltz-a-francis-bacon-of-ai-art-will-emerge-but-todays-work-falls-flat/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "art-critic-jerry-saltz-a-francis-bacon-of-ai-art-will-emerge",
+    "month": ""
+  },
+  {
+    "id": 45,
+    "title": "10 Lesson's from Karpathy's \"Intro to Large Language Models\" talk",
+    "summary": "Andrej Karpathy is one of the best explainers of AI technology. He gave a talk in 2024 explaining how LLMs work. Today's post is a summary of the key lessons from that talk which are still relevant today. (You're encouraged to watch the whole video by Karpathy that is linked at the end.)",
+    "link": "https://docs.google.com/document/d/1eBecjq7HD7tAoyV7mizoQKzcor9cyJSK9nYDHQHkdK4/edit?tab=t.0",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "10-lessons-from-karpathys-intro-to-large-language-models-tal",
+    "month": ""
+  },
+  {
+    "id": 46,
+    "title": "(Video) AI and the Future of India’s IT Giants | Dr. Vishal Sikka",
+    "summary": "Dr. Vishal Sikka is a former Infosys CEO and a former CTO at SAP. In this extract from a 2025 interview, he speaks about the impact of AI on Indian IT service giants, on the threat of AI generated software to packaged software (include a rather unusual security challenge), and how enterprises are li...",
+    "link": "https://drive.google.com/file/d/1OiEOflPeOZuTs0ZDDAeIA_3w-v9WVx6j/view?usp=drive_link",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "video-ai-and-the-future-of-indias-it-giants-dr-vishal-sikka",
+    "month": ""
+  },
+  {
+    "id": 47,
+    "title": "How AI Made Me 33% More Productive",
+    "summary": "How Richard Hanania uses ChatGPT to improve his productivity: research, gathering data, creating charts and graphs, learning, reading books and textbooks, and more. \n\nSome of these ideas might seem obvious, but maybe one or two might be new to you. Also, this is a good articulation of why having Cha...",
+    "link": "https://www.richardhanania.com/p/how-ai-made-me-33-more-productive",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "how-ai-made-me-33-more-productive",
+    "month": ""
+  },
+  {
+    "id": 48,
+    "title": "In Defense of Generative Video Accelerationism",
+    "summary": "If anyone can generate AI videos, what will happen to misinformation. More generally what will happen to our belief in the truth of videos? How will our culture change as a result? \n\nA deep dive on the impact of AI video generation—comparing and contrasting it to the invention of the printing press.",
+    "link": "https://www.thediff.co/archive/in-defense-of-generative-video-accelerationism/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "in-defense-of-generative-video-accelerationism",
+    "month": ""
+  },
+  {
+    "id": 49,
+    "title": "How I Approach AI Policy (And \"Where We Are Headed, Part 2.5\")",
+    "summary": "Will AI just be pretty good technology or will it be AGI that transforms society? Opinions, even among sensible experts, are sharply divided. When we can't predict the basics of what AI will be capable of, how do we approach the problem of regulating AI? What laws should government make? Regulate to...",
+    "link": "https://www.hyperdimensional.co/p/how-i-approach-ai-policy",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "how-i-approach-ai-policy-and-where-we-are-headed-part-25",
+    "month": ""
+  },
+  {
+    "id": 50,
+    "title": "The Deep Research problem",
+    "summary": "\"Deep Research\" is an OpenAI feature which does what its name suggests. Almost all major LLM tools provide such a feature now. Analyst Benedict Evans would like to use it but says: \"OpenAI’s Deep Research is built for me, and I can’t use it.\". Find out why he says so.",
+    "link": "https://www.ben-evans.com/benedictevans/2025/2/17/the-deep-research-problem",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "the-deep-research-problem",
+    "month": ""
+  },
+  {
+    "id": 51,
+    "title": "Why AI Will Lead to More “Proof of Reality” Posts",
+    "summary": "Consuming AI generated images seems to evoke mixed reactions. This is a headache for brand managers. This piece nicely unpacks the challenges, and calls out the kinds of brands that might want to go in for human-generated content.",
+    "link": "https://www.milkkarten.net/p/why-ai-will-lead-to-more-proof-of",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "why-ai-will-lead-to-more-proof-of-reality-posts",
+    "month": ""
+  },
+  {
+    "id": 52,
+    "title": "The Cybernetic Teammate",
+    "summary": "How is life different if you have an AI as a coworker on your team? Interesting research which shows some of the advantages as well as some of the pitfalls.",
+    "link": "https://www.oneusefulthing.org/p/the-cybernetic-teammate",
+    "theme": "Future of Work",
+    "filename": "cybernetic-teammate.html",
+    "slug": "the-cybernetic-teammate",
+    "month": ""
+  },
+  {
+    "id": 53,
+    "title": "The Two-Minute Mile Problem.\nIs higher ed ready for acceleration?",
+    "summary": "AI is capable of giving accelerated learning to students via customized tutoring. There is already some evidence that some students can learn 2x faster with this method. How does this change colleges and universities? These are not easy questions to answer. This post tries to grapple with the coming...",
+    "link": "https://hollisrobbinsanecdotal.substack.com/p/the-two-minute-mile-problem",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "the-two-minute-mile-problem-is-higher-ed-ready-for-accelerat",
+    "month": ""
+  },
+  {
+    "id": 54,
+    "title": "Exponentials Are Hard For Us To Understand",
+    "summary": "We underestimated the power and impact of exponential growth in the early stages of Covid and we are doing the same thing again with AI capabilities, says Ashish Kulkarni. And then shows us a bunch of graphs to make us understand...",
+    "link": "https://www.econforeverybody.com/p/exponentials-are-hard-for-us-to-understand",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "exponentials-are-hard-for-us-to-understand",
+    "month": ""
+  },
+  {
+    "id": 55,
+    "title": "Remarks on AI from Neal Stephenson",
+    "summary": "Author Neal Stephenson is a famous sci-fi author who invented the concept of the metaverse and also anticipated ChatGPT-like systems. He's an influential thinker to many movers and shakers in the tech world. In this article, he riffs on the different kinds of intelligences we encounter and where in ...",
+    "link": "https://nealstephenson.substack.com/p/remarks-on-ai-from-nz",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "remarks-on-ai-from-neal-stephenson",
+    "month": ""
+  },
+  {
+    "id": 56,
+    "title": "Can you spot a financial fake?",
+    "summary": "Expense fraud is an old problem. It has got a new lease of life thanks to AI.",
+    "link": "https://theconversation.com/can-you-spot-a-financial-fake-how-ai-is-raising-our-risks-of-billing-fraud-253912",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "can-you-spot-a-financial-fake",
+    "month": ""
+  },
+  {
+    "id": 57,
+    "title": "On Working with Wizards",
+    "summary": "Ethan Mollick says that AI is no longer like a coworker working with us. Instead it is a Wizard giving us magical artifacts. And it is not clear what's the right way to work with wizards.\n\n\"So what do we do with our wizards? I think we need to develop a new literacy: First, learn when to summon the ...",
+    "link": "https://www.oneusefulthing.org/p/on-working-with-wizards",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "on-working-with-wizards",
+    "month": ""
+  },
+  {
+    "id": 58,
+    "title": "Baby Shoggoth Is Listening",
+    "summary": "If you want to leave your mark on the world, you should write for AIs - so say several smart people. This article dives into this thought process, all the resulting weirdness, and ends up in sci-fi as well as philosophical territory.\nNote: this piece is long. So we recommend you read until you run o...",
+    "link": "https://theamericanscholar.org/baby-shoggoth-is-listening/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "baby-shoggoth-is-listening",
+    "month": ""
+  },
+  {
+    "id": 59,
+    "title": "Why we need to create AI that thinks in ways that we can’t even imagine",
+    "summary": "Former WIRED editor Kevin Kelly writes about how AI could help with differerent 'potential minds'. This piece is fom 2017, so is relatively untainted by news of LLMs, and thus brings a slightly broader view of the potential of AI",
+    "link": "https://ideas.ted.com/why-we-need-to-create-ais-that-think-in-ways-that-we-cant-even-imagine/",
+    "theme": "Evaluating AI Outputs",
+    "filename": null,
+    "slug": "why-we-need-to-create-ai-that-thinks-in-ways-that-we-cant-ev",
+    "month": ""
+  },
+  {
+    "id": 60,
+    "title": "Will competition over advanced AI lead to war?",
+    "summary": "Nations have fought over many things in history. Will AI be another cause for belligerence? (Note: ASI in this piece means Artificial Superintelligence)",
+    "link": "https://peterwildeford.substack.com/p/will-competition-over-advanced-ai",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "will-competition-over-advanced-ai-lead-to-war",
+    "month": ""
+  },
+  {
+    "id": 61,
+    "title": "How Behavioral Science Can Improve the Return on AI Investments",
+    "summary": "Why do so many AI projects flop? This article makes a case for thinking about the human behavioural angle",
+    "link": "https://hbr.org/2025/11/how-behavioral-science-can-improve-the-return-on-ai-investments",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "how-behavioral-science-can-improve-the-return-on-ai-investme",
+    "month": ""
+  },
+  {
+    "id": 62,
+    "title": "Legale: Seconds to Disaster",
+    "summary": "A short story by Sci-Fi author Vernor Vinge (who first popularized the concept of the AI Singularity). It is a very short story which points to two interesting things about our AI future: first, AI agents which can make decisions on our behalf, and second, AI agents who follow the letter of the rule...",
+    "link": "https://archive.is/20171104123412/https://www.nature.com/articles/548254a",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "legale-seconds-to-disaster",
+    "month": ""
+  },
+  {
+    "id": 63,
+    "title": "Giving your AI a Job Interview",
+    "summary": "A challenge you'll face is dealing with new AI models. How do you decide if a new model is any good? Ethan Mollick suggests an approach similar to 'interviewing' for a job on your team.",
+    "link": "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
+    "theme": "Future of Work",
+    "filename": "giving-ai-job-interview.html",
+    "slug": "giving-your-ai-a-job-interview",
+    "month": ""
+  },
+  {
+    "id": 64,
+    "title": "Shaping India’s liberal arts education for the AI age",
+    "summary": "If AI can effortlessly assimilate existing knowledge from an ocean of resources, what then remains the purpose of institutional education, asks Somak Raychaudhury, Vice Chancellor of Ashoka University (India's top Liberal Arts College). When knowledge is on tap, what has value and how do we teach it...",
+    "link": "https://www.hindustantimes.com/opinion/shaping-india-s-liberal-arts-education-for-the-ai-age-101762873469932.html",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "shaping-indias-liberal-arts-education-for-the-ai-age",
+    "month": ""
+  },
+  {
+    "id": 65,
+    "title": "Why AI Breaks Bad",
+    "summary": "\"Once in a while, LLMs turn evil—and no one quite knows why.\"",
+    "link": "https://www.wired.com/story/ai-black-box-interpretability-problem",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "why-ai-breaks-bad",
+    "month": ""
+  },
+  {
+    "id": 66,
+    "title": "Beyond the Single Genius model of AI",
+    "summary": "This is a very short read, but makes some important points: a lot of thinking around AI (including most of the articles posted on this compound) are focused on the idea of a single LLM being able to do everything. But reality is likely to be a bunch of AI agents with different skills cooperating (or...",
+    "link": "https://x.com/sebkrier/status/1994796202760528113",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "beyond-the-single-genius-model-of-ai",
+    "month": ""
+  },
+  {
+    "id": 67,
+    "title": "Paying AIs to Read My Books",
+    "summary": "\"Some authors have it backwards. They believe that AI companies should pay them for training AIs on their books. But I predict in a very short while, authors will be paying AI companies\"... says author Kevin Kelly.",
+    "link": "https://kevinkelly.substack.com/p/paying-ais-to-read-my-books",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "paying-ais-to-read-my-books",
+    "month": ""
+  },
+  {
+    "id": 68,
+    "title": "I Set A Trap To Catch My Students Cheating With AI. The Results Were Shocking.",
+    "summary": "A professor found 39% of his students cheating using AI and this leads to a relection on the purpose of education, and what can teachers do about this problem",
+    "link": "https://www.huffpost.com/entry/history-professor-ai-cheating-students_n_69178150e4b0781acfd62540",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "i-set-a-trap-to-catch-my-students-cheating-with-ai-the-resul",
+    "month": ""
+  },
+  {
+    "id": 69,
+    "title": "The AI Was Fed Sloppy Code. It Turned Into Something Evil.",
+    "summary": "Teaching AI one bad habit causes it to become bad (\"misaligned\") in a number of other areas. This is an important finding from the point-of-view of safety.",
+    "link": "https://www.quantamagazine.org/the-ai-was-fed-sloppy-code-it-turned-into-something-evil-20250813/",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "the-ai-was-fed-sloppy-code-it-turned-into-something-evil",
+    "month": ""
+  },
+  {
+    "id": 70,
+    "title": "Learn to use AI like a Surgeon",
+    "summary": "To use AI well, you need to start thinking like a surgeon: your domain expertise is important and necessary and at the same time you need to learn to leverage your skills with the help of AI.",
+    "link": "https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "learn-to-use-ai-like-a-surgeon",
+    "month": ""
+  },
+  {
+    "id": 71,
+    "title": "Building AI4Bharat: Why India Needs Its Own AI Stack, With IIT Prof. Mitesh",
+    "summary": "Prof. Mitesh Khapra is one of the co-founders of AI4Bharat, a research lab that is focusing on creating language resources for AI and NLP in Indian languages. In this extract, he gives us a glimpse into some of the challenges in building AI language systems for India. (Incidentally, he was named on ...",
+    "link": "https://drive.google.com/file/d/1TJJhqzxRFikpK0GM6-fbTVTF8YfBScAK/view?usp=drive_link",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "building-ai4bharat-why-india-needs-its-own-ai-stack-with-iit",
+    "month": ""
+  },
+  {
+    "id": 72,
+    "title": "You Are Now a Manager of a Team of LLMs",
+    "summary": "Everybody, including individual contributors, freshers, and students have to improve their managerial skills, because everyone now has access to a \"team\" of \"AI interns\" with different strengths, weaknesses, and to get the most out of them, you need to delegate like a manager.",
+    "link": "https://aiiq.substack.com/p/you-are-now-a-manager-of-a-team-of",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "you-are-now-a-manager-of-a-team-of-llms",
+    "month": ""
+  },
+  {
+    "id": 73,
+    "title": "Peeling the AI Anxiety Onion",
+    "summary": "Who are the people worried about AI taking jobs and why? Research throws up some suprising answers.",
+    "link": "https://agglomerations.substack.com/p/peeling-the-ai-anxiety-onion",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "peeling-the-ai-anxiety-onion",
+    "month": ""
+  },
+  {
+    "id": 74,
+    "title": "Measuring AI Ability to Complete Long Tasks",
+    "summary": "How useful is an AI model? Most benchmarks have a set of questions/tasks and check whether the AI gives an acceptable answer. But this article argues that a much different metric is more useful: what is the longest task (measured in amount of time taken by an average human to complete that task) tha...",
+    "link": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "theme": "Evaluating AI Outputs",
+    "filename": null,
+    "slug": "measuring-ai-ability-to-complete-long-tasks",
+    "month": ""
+  },
+  {
+    "id": 75,
+    "title": "The AI Wildfire Is Coming. It's Going to Be Very Painful and Incredibly Healthy.",
+    "summary": "This piece takes a forest metaphor to characterise the disruptions from AI on tech cycles. This is a longish piece, so you can optionally pause at the heading \"Two Kinds of Compute, Two Different Futures\".",
+    "link": "https://ceodinner.substack.com/p/the-ai-wildfire-is-coming-its-going",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "the-ai-wildfire-is-coming-its-going-to-be-very-painful-and-i",
+    "month": ""
+  },
+  {
+    "id": 76,
+    "title": "Inside the race to train AI robots how to act human in the real world",
+    "summary": "\"Humanoid robot training is booming around the world. Tech companies are rushing to build the robots for a market projected to reach $38 billion within the next decade.\"",
+    "link": "https://www.latimes.com/business/story/2025-11-02/inside-californias-rush-to-gather-human-data-for-building-humanoid-robots",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "inside-the-race-to-train-ai-robots-how-to-act-human-in-the-r",
+    "month": ""
+  },
+  {
+    "id": 77,
+    "title": "University education as we know it is over",
+    "summary": "Universities need to adopt a barbell approach to a future in which AI eats the current patterns of university education, argues an economist who is a research manager at a forecasting institute and was an academic in a university.",
+    "link": "https://inexactscience.substack.com/p/university-education-as-we-know-it",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "university-education-as-we-know-it-is-over",
+    "month": ""
+  },
+  {
+    "id": 78,
+    "title": "I love AI. Why doesn't everyone?",
+    "summary": "Noah Smith talks about why he is pro-AI and collects together some of the arguments from people who are anti-AI (and gives his opinion on why they're mistaken)",
+    "link": "https://www.noahpinion.blog/p/i-love-ai-why-doesnt-everyone",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "i-love-ai-why-doesnt-everyone",
+    "month": ""
+  },
+  {
+    "id": 79,
+    "title": "Replace humans by algorithms whenever possible -Daniel Kanheman",
+    "summary": "Behavioral psychologist and Nobel prize winner Daniel Kahneman thought even bad algorithms are better than humans",
+    "link": "https://aiiq.substack.com/p/replace-humans-by-algorithms-whenever",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "replace-humans-by-algorithms-whenever-possible-daniel-kanhem",
+    "month": ""
+  },
+  {
+    "id": 80,
+    "title": "The Coming Technological Singularity",
+    "summary": "What is the \"singularity\" that AI people worry about, and why would anyone be worried about it? Sci-Fi author and professor of mathematics Vernor Vinge, in 1993, wrote this article which popularized the idea. This paper is read even today by top AI thinkers to think through the possible implications...",
+    "link": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "the-coming-technological-singularity",
+    "month": ""
+  },
+  {
+    "id": 81,
+    "title": "The Confession in Your Clicks",
+    "summary": "S. Anand is a self-styled 'LLM Psychologist'. He did a workshop on mining one's digital footprint using LLMs; this is a summarised account of some takeaways. The piece links to the raw workshop recording, if you are interested.",
+    "link": "https://sanand0.github.io/talks/2025-12-06-mining-digital-exhaust/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-confession-in-your-clicks",
+    "month": ""
+  },
+  {
+    "id": 82,
+    "title": "AI and the unravelling of copyright (Part One)",
+    "summary": "Nikhil Pahwa is a journalist and digital rights activist who presents a creator's viewpoint on the consumption of content by AI systems. This is the first part in a series; the second is available on his Substack.",
+    "link": "https://isreasoned.substack.com/p/ai-and-the-unravelling-of-copyright",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "ai-and-the-unravelling-of-copyright-part-one",
+    "month": ""
+  },
+  {
+    "id": 83,
+    "title": "Moravec, Monkeys, Mirrors and Mind",
+    "summary": "A look at the evolutionary history of human intelligence, talks about the 5 breakthroughs on the path from self-replicating molecules to human brains, and then compares those to the capabilities of current AI models: which ones do they have and which ones are missing.",
+    "link": "https://www.econforeverybody.com/p/moravec-monkeys-mirrors-and-mind",
+    "theme": "Evaluating AI Outputs",
+    "filename": null,
+    "slug": "moravec-monkeys-mirrors-and-mind",
+    "month": ""
+  },
+  {
+    "id": 84,
+    "title": "Moore's Law for Everything",
+    "summary": "Sam Altman, CEO of OpenAI, wrote this article about the potential effects of exponential improvement in AI capabilities—before ChatGPT became a household word. He talks about how society changes if AI makes everything easier and cheaper, and what policy makers need to be careful about.",
+    "link": "https://moores.samaltman.com/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "moores-law-for-everything",
+    "month": ""
+  },
+  {
+    "id": 85,
+    "title": "What an octopus’s mind can teach us about AI’s ultimate mystery",
+    "summary": "\"Machine consciousness has been debated—and dismissed—since Turing.\" (Note: this is a piece from 2021, so the references to GPT-3 are a little dated)",
+    "link": "https://www.technologyreview.com/2021/08/25/1032111/conscious-ai-can-machines-think/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "what-an-octopuss-mind-can-teach-us-about-ais-ultimate-myster",
+    "month": ""
+  },
+  {
+    "id": 86,
+    "title": "Six mental models for working with AI",
+    "summary": "AI is not normal software so we need very new and different ways of working with AI to make the best use of the capabilities. Here are 6 mental models that can change your relationship with AI and your work.\nNote: you are most likely to hit a paywall, so please use the offline pdf instead.",
+    "link": "https://www.exponentialview.co/p/six-mental-models-for-working-with",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "six-mental-models-for-working-with-ai",
+    "month": ""
+  },
+  {
+    "id": 87,
+    "title": "To grow, we must forget… but now AI remembers everything",
+    "summary": "Thought-provoking piece on how AI's infinite memory might actually limit our growth. It argues that forgetting isn't a bug in human cognition but a feature that lets us evolve and imagine new possibilities. Really interesting take on why we need to design AI systems that know when to forget.",
+    "link": "https://www.doc.cc/articles/we-must-forget?user_id=66c4c73d600ae15075a4dda9",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "to-grow-we-must-forget-but-now-ai-remembers-everything",
+    "month": ""
+  },
+  {
+    "id": 88,
+    "title": "In defense of slop",
+    "summary": "Slop is the new term for low-quality content autogenerated by AI, which is making everything worse. Most people hate slop. But, maybe slop is a good thing. This article argues that slop can usher in a golden age of creativity and experimentation.",
+    "link": "https://newsletter.rootsofprogress.org/p/in-defense-of-slop",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "in-defense-of-slop",
+    "month": ""
+  },
+  {
+    "id": 89,
+    "title": "The Personal Panopticon",
+    "summary": "What does it feel like when you run a lot of your life through Claude Code or other desktop AI agents? Molly describes how she finds herself doing more and more with claude code, from financial management to email replies, and speculates on where the world is going",
+    "link": "https://docs.google.com/document/d/19-ajYTp2hwOW9WcirY9OIoSvMdfyivup8LMI92PkS20/edit?tab=t.0",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "the-personal-panopticon",
+    "month": ""
+  },
+  {
+    "id": 90,
+    "title": "AI and Business Education: Creative Destruction Comes to the B-School",
+    "summary": "A Strategic Analysis of How Artificial Intelligence Will Transform Undergraduate and Graduate Business Programs. The author works in investing, and also has two Ph.Ds in varied disciplines. The piece is a little longer than our usual picks.",
+    "link": "https://drbhaskardasgupta1.substack.com/p/ai-and-business-education-creative",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "ai-and-business-education-creative-destruction-comes-to-the-",
+    "month": ""
+  },
+  {
+    "id": 91,
+    "title": "LLM poetry and the \"greatness\" question",
+    "summary": "LLMs can write decent poems. But can they write great poetry? How much effort and of what kind is needed to get LLMs to write great poetry? And can someone who is not a great poet teach an LLM to write great poetry? This piece is not just about poetry: it is about expertise in the time of AI.",
+    "link": "https://hollisrobbinsanecdotal.substack.com/p/llm-poetry-and-the-greatness-question",
+    "theme": "Evaluating AI Outputs",
+    "filename": null,
+    "slug": "llm-poetry-and-the-greatness-question",
+    "month": ""
+  },
+  {
+    "id": 92,
+    "title": "The AI productivity problem",
+    "summary": "\"The AI industry is sending mixed signals, with markets turning red while teams report real productivity gains. In this session I explore why we are living in a split reality, where individuals move faster with these tools but the wider economy is ambivalent.\" A video by tech observer and futurist A...",
+    "link": "https://www.youtube.com/watch?v=9lJYQtFM4Xg&",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-ai-productivity-problem",
+    "month": ""
+  },
+  {
+    "id": 93,
+    "title": "The Bull Case for CS Grads",
+    "summary": "The dominant story around computer science graduates is bleak: AI writes code now, so the job market for people who write code is collapsing. But Chiradeep argues that AI isn’t eliminating computer science. It’s correcting a mismatch. The next decade won’t be CS grads doing web dev. It will be CS gr...",
+    "link": "https://cvittal.medium.com/the-bull-case-for-cs-grads-ec8dfda2725f",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-bull-case-for-cs-grads",
+    "month": ""
+  },
+  {
+    "id": 94,
+    "title": "The rise of AI denialism",
+    "summary": "So why has the public latched onto the narrative that AI is stalling, that the output is slop, and that the AI boom is just another tech bubble that lacks justifiable use-cases? I believe it’s because society is collectively entering the first stage of grief — denial — over the very scary possibilit...",
+    "link": "https://bigthink.com/the-present/the-rise-of-ai-denialism/",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "the-rise-of-ai-denialism",
+    "month": ""
+  },
+  {
+    "id": 95,
+    "title": "Look Ma, No Rules!",
+    "summary": "LLMs can be dangerous: they can give dangerous information to the wrong people, from terrorists to those with mental health issues. So AI companies give LLMs a \"system prompt\" consisting of a long list of DOs and DONTs. But that is not enough, says Anthropic, and so they have use a different approac...",
+    "link": "https://www.econforeverybody.com/p/look-ma-no-rules",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "look-ma-no-rules",
+    "month": ""
+  },
+  {
+    "id": 96,
+    "title": "Tyler Cowen’s AI campus",
+    "summary": "Economist Tyler Cowen on what the future of campuses will/should look like. He thinks that 1/3rd of their time should be spent in learning how to use AI well, but he also thinks there should be time devoted to learning how to write without the help of AI. And there are a number of other thoughts.",
+    "link": "https://marginalrevolution.com/marginalrevolution/2026/01/tyler-cowens-ai-campus.html",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "tyler-cowens-ai-campus",
+    "month": ""
+  },
+  {
+    "id": 97,
+    "title": "A New Year’s letter to a young person",
+    "summary": "What advice should we give youngsters when we don't know what will get automated by AI? A lot of great advice from 5 years ago is now obsolete. This article makes the case that the rise of automation does not mean the end of jobs: jobs will shift to the more messy parts of the spectrum, lists the \"m...",
+    "link": "https://www.siliconcontinent.com/p/a-new-years-letter-to-a-young-person?__readwiseLocation=",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "a-new-years-letter-to-a-young-person",
+    "month": ""
+  },
+  {
+    "id": 98,
+    "title": "Among the Agents",
+    "summary": "Desktop AI agents (called \"infant AGI\" by Dean Ball) are truly marvellous technologies. \"The individuals and firms that discover more and better ways to work with this strange new technology will be the ones who thrive in [the AI] era\". Dean Ball, an AI researcher, was a senior policy advisor to the...",
+    "link": "https://www.hyperdimensional.co/p/among-the-agents",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "among-the-agents",
+    "month": ""
+  },
+  {
+    "id": 99,
+    "title": "Mathematical Beauty, Truth and Proof in the Age of AI",
+    "summary": "\"It might be surprising to learn that what counts as a significant mathematical question is often a matter of taste.\". In this piece, mathematicians discuss how AI is changing the way mathematics research is done.",
+    "link": "https://www.quantamagazine.org/mathematical-beauty-truth-and-proof-in-the-age-of-ai-20250430/",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "mathematical-beauty-truth-and-proof-in-the-age-of-ai",
+    "month": ""
+  },
+  {
+    "id": 100,
+    "title": "In the Long Run, Everything is a Fad: Benn Stancil",
+    "summary": "The speaker argues that we are moving into an era where more attempts will be made to quantify the inherently unquantifiable, and it's all just 'vibes'. (Most of the talk is not about AI, but about humans.)",
+    "link": "https://www.youtube.com/watch?v=D7zcwFSu4HU",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "in-the-long-run-everything-is-a-fad-benn-stancil",
+    "month": ""
+  },
+  {
+    "id": 101,
+    "title": "Reflections on Vibe Researching",
+    "summary": "When you do projects with the help of AI, you can work much faster. The quantity of your output goes up, but the quality goes down a bit (why?). And of course, the confident hallucinations are very seductive so you have to be extra careful. There is still place for reviewers, human judgement and tas...",
+    "link": "https://joshuagans.substack.com/p/reflections-on-vibe-researching",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "reflections-on-vibe-researching",
+    "month": ""
+  },
+  {
+    "id": 102,
+    "title": "🔮 The work after work",
+    "summary": "Futurist Aseem Azhar on what could perhaps be described as Artisanal Intelligence!",
+    "link": "https://www.exponentialview.co/p/artisan-premium-making-in-2026",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-work-after-work",
+    "month": ""
+  },
+  {
+    "id": 103,
+    "title": "The Shape of AI: Jaggedness, Bottlenecks and Salients",
+    "summary": "AI capabilities have \"jagged edges\", meaning they are superhuman at some things and yet they can be incredibly dumb in other, seemingly simple areas. This article explains the concept, shows some initial proof that this indeed remains true even as AI models keep improving, and explores the implicati...",
+    "link": "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "the-shape-of-ai-jaggedness-bottlenecks-and-salients",
+    "month": ""
+  },
+  {
+    "id": 104,
+    "title": "Agency v Compliance in Education",
+    "summary": "Economist Ashish Kulkarni asks the question: \"Can AI affect the future of undergraduate education\"? Or more accurately \"Will AI affect the future of undergraduate education\" (a different question!)? Or more accurately still, \"What happens if undergraduate colleges/universities don't adapt to the dis...",
+    "link": "https://www.econforeverybody.com/p/agency-v-compliance-in-education",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "agency-v-compliance-in-education",
+    "month": ""
+  },
+  {
+    "id": 105,
+    "title": "AI’s trillion-dollar opportunity: Context graphs",
+    "summary": "This piece, written in the context of decision-making in enterprises, introduces the idea of context graphs. 'Context' has been billed as the next major opportunity for startups.",
+    "link": "https://foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity/",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "ais-trillion-dollar-opportunity-context-graphs",
+    "month": ""
+  },
+  {
+    "id": 106,
+    "title": "Have we been disrupting BI the wrong way?",
+    "summary": "In 2024, Karthik Shashidhar co-founded Babbage Insight, a company trying to proactively surface insights and reinventing the 'dashboard' (a popular theme for AI startups). The company shut down in 2026. Karthik wrote a post outlining the challenges that they faced in competing in the space of BI. It...",
+    "link": "https://noenthuda.substack.com/p/have-we-been-disrupting-bi-the-wrong",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "have-we-been-disrupting-bi-the-wrong-way",
+    "month": ""
+  },
+  {
+    "id": 107,
+    "title": "How To Use AI for the Ancient Art of Close Reading",
+    "summary": "People use AI to summarize articles for them, so that they have to read less. But this article argues for the reverse: to use AI to spend even more time on reading. It describes the art of close reading, and gives examples of how to do it using AI, using two video-based examples.",
+    "link": "https://www.fast.ai/posts/2026-01-21-reading-LLMs/",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "how-to-use-ai-for-the-ancient-art-of-close-reading",
+    "month": ""
+  },
+  {
+    "id": 108,
+    "title": "Debunking Moravec's Paradox",
+    "summary": "Moravec's Paradox is regularly cited by people thinking about the future of AI, including top experts. It says, in short that difficult things are easy for AI (like hard calculations, chess) and easy things are difficult (like reading expressions of humans). But, argues this video, that is a just-so...",
+    "link": "https://www.youtube.com/watch?v=-Ty4BXrASFU",
+    "theme": "Human + AI Workflows",
+    "filename": null,
+    "slug": "debunking-moravecs-paradox",
+    "month": ""
+  },
+  {
+    "id": 109,
+    "title": "PlacementVal - by Ashish Kulkarni - EconForEverybody",
+    "summary": "How do you evaluate AI capabilities? This post appears to be about jobs, and which jobs are at risk from AI. But once you get past the initial sections, you'll notice it is about (one particular) methodology used to evaluate the potential real-world impact of AI. AI capabilities have jagged edges, s...",
+    "link": "https://www.econforeverybody.com/p/placementval",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "placementval-by-ashish-kulkarni-econforeverybody",
+    "month": ""
+  },
+  {
+    "id": 110,
+    "title": "On AI and Children",
+    "summary": "Impact of AI on children, and how to frame policies for children's safety, is one of the most active areas in AI policy. Dean Ball gives us some first principles on the basis of which we can understand this issue better and make better decisions.",
+    "link": "https://www.hyperdimensional.co/p/on-ai-and-children",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "on-ai-and-children",
+    "month": ""
+  },
+  {
+    "id": 111,
+    "title": "Breaking the Spell of Vibe Coding",
+    "summary": "This article compares vibe-coding (the new method of programming software using AI, without actually looking at any of the generated code) to gambling, and points out the parallels.",
+    "link": "https://www.fast.ai/posts/2026-01-28-dark-flow/",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "breaking-the-spell-of-vibe-coding",
+    "month": ""
+  },
+  {
+    "id": 112,
+    "title": "How We Built Discussion Moments",
+    "summary": "A teacher built an AI-based program to help in the classroom. This is a discussion of the process he followed to decide what to build, where to incorporate AI, where to not incorporate AI, and most importantly, an explanation of why he didn't vibe-code the whole thing.",
+    "link": "https://danmeyer.substack.com/p/how-we-built-discussion-moments",
+    "theme": "AI & Education",
+    "filename": null,
+    "slug": "how-we-built-discussion-moments",
+    "month": ""
+  },
+  {
+    "id": 113,
+    "title": "AI and Jevon's Paradox",
+    "summary": "If AI drastically reduces the cost of software, what happens to the revenues of the software industry (you can replace \"software\" in that sentence with legal, pharma, and many other industries)? The intuitive conclusion most people would reach is that the revenues would go down. \n\nHowever, Jevon's P...",
+    "link": "https://docs.google.com/document/d/1Ip8z8ozysFV3KLT0FXQ3OJ-MxT4LnAmOXSnqgIbOv9s/edit?usp=sharing",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "ai-and-jevons-paradox",
+    "month": ""
+  },
+  {
+    "id": 114,
+    "title": "AI and Trust",
+    "summary": "Human society runs on trust. And we don't think about it much. But AI is going to change the equations; a lot. This is what Bruce's article is about: \"I am going to make several arguments. One, that there are two different kinds of trust—interpersonal trust and social trust—and that we regularly con...",
+    "link": "https://www.schneier.com/blog/archives/2023/12/ai-and-trust.html",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "ai-and-trust",
+    "month": ""
+  },
+  {
+    "id": 115,
+    "title": "The Collapse of 'Cannot': When Models Break Intuitions",
+    "summary": "\"When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong\" —Arthur C. Clarke. A number of distinguished scientists, from Noam Chomsky (father of modern linguistics), Judea Pearl ...",
+    "link": "https://www.geninnov.ai/blog/the-collapse-of-cannot-when-models-break-intuitions",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "the-collapse-of-cannot-when-models-break-intuitions",
+    "month": ""
+  },
+  {
+    "id": 116,
+    "title": "Something Big Is Happening. Here’s What It Actually Is.",
+    "summary": "",
+    "link": "https://medium.com/@vishalmisra/something-big-is-happening-heres-what-it-actually-is-9523482c4e00",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "something-big-is-happening-heres-what-it-actually-is",
+    "month": ""
+  },
+  {
+    "id": 132,
+    "title": "Are 90% of Programs Being Written By AI?",
+    "summary": "No, 90% of programs are not currently being written by AI. But *some* good, senior programmers are writing 90% of their code using AI. This article answers the questions, 1) why does this matter, 2) to you even if you're not a programmer, and 3) the different ways in which AI is being used for progr...",
+    "link": "https://aiiq.substack.com/p/are-90-of-programs-being-written",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "are-90-of-programs-being-written-by-ai",
+    "month": "April"
+  },
+  {
+    "id": 133,
+    "title": "Most Work is Translation (And LLMs are the first universal translators for work.)",
+    "summary": "This article first makes the case that most knowledge work is \"translation\" from one type of information to another. And then goes on to point out that LLMs, which were invented to do translations, are very good at translations of all those kinds, so asks you to consider what this means for individu...",
+    "link": "https://aparnacd.substack.com/p/most-work-is-translation",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "most-work-is-translation-and-llms-are-the-first-universal-tr",
+    "month": "May"
+  },
+  {
+    "id": 134,
+    "title": "Curious About Consciousness? Ask the Self-Aware Machines",
+    "summary": "This roboticist is building new minds to crack the mystery of consciousness, one self-aware arm at a time.",
+    "link": "https://www.quantamagazine.org/curious-about-consciousness-ask-the-self-aware-machines-20190711/",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "curious-about-consciousness-ask-the-self-aware-machines",
+    "month": "May"
+  },
+  {
+    "id": 135,
+    "title": "Could AI slow science?",
+    "summary": "\"It’s a common-sense view that AI will speed science greatly as it gets adopted in every part of the scientific pipeline. But many early common-sense predictions about the impact of a new technology on an existing institution proved badly wrong\".\n\nThis is a loooong piece, so consider the short audio...",
+    "link": "https://www.aisnakeoil.com/p/could-ai-slow-science",
+    "theme": "AI Technology",
+    "filename": null,
+    "slug": "could-ai-slow-science",
+    "month": "May"
+  },
+  {
+    "id": 136,
+    "title": "In Search Of AI Psychosis",
+    "summary": "Scott Alexander is a practicing psychiatrist, and one of best science and rationality bloggers. He does an in-depth coverage of the different situations in which AI could be said to have \"caused\" psychosis in patients, and whether AI is to blame in each case, and what we should be concerned about. \n...",
+    "link": "https://www.astralcodexten.com/p/in-search-of-ai-psychosis",
+    "theme": "Trust & Safety in AI",
+    "filename": null,
+    "slug": "in-search-of-ai-psychosis",
+    "month": "May"
+  },
+  {
+    "id": 137,
+    "title": "Making AI Work: Leadership, Lab, and Crowd",
+    "summary": "Incorporating AI effectively in enterprises poses new challenges for leadership. Traditional top-down patterns will not work. Ethan Mollick suggests a new pattern, \"Leadership, Lab, and Crowd\".",
+    "link": "https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "making-ai-work-leadership-lab-and-crowd",
+    "month": "May"
+  }
+]

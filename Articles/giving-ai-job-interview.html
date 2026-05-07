@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giving Your AI a Job Interview — AI UXR Hub</title>
+  <meta name="description" content="How to evaluate a new AI model before using it in your UX research workflow — practical frameworks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>⚡</span> AI UXR Hub</a>
+    <div class="nav-links" id="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../Themes/future-of-work.html">Themes</a>
+      <a href="../PLaybook/index.html">Playbook</a>
+    </div>
+    <button class="nav-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main class="article-page">
+
+  <a href="../index.html" class="back-link">← Back to all articles</a>
+
+  <div class="article-meta">
+    <span class="theme-badge theme-evaluating-ai-outputs">Evaluating AI Outputs</span>
+    <span style="color:var(--text-s);font-size:.85rem">Article #63 · CTQ Reading List</span>
+    <a href="https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview" target="_blank" rel="noopener" class="article-source-link">
+      Read Original ↗
+    </a>
+  </div>
+
+  <h1 style="margin-bottom:24px">Giving Your AI a Job Interview</h1>
+
+  <!-- Key Takeaways -->
+  <div class="insight-block">
+    <div class="insight-block-title">🎯 Key Takeaways</div>
+    <ul>
+      <li>AI models have <strong>jagged capability profiles</strong> — excellent at some tasks, surprisingly poor at others — so evaluation must be task-specific, not generic.</li>
+      <li>The best way to evaluate a new AI model is to treat it like a <strong>job interview</strong>: test it on tasks that matter <em>for your role</em>, not benchmarks designed by AI labs.</li>
+      <li>Give the model <strong>your real work tasks</strong> at varying difficulty levels and see where it fails, not just where it succeeds.</li>
+      <li>A model that is bad at <em>your</em> specific tasks should not be used, even if it scores highly on generic benchmarks.</li>
+      <li>Regularly re-evaluate models as they are updated — capabilities change (sometimes regress) with new versions.</li>
+    </ul>
+  </div>
+
+  <!-- Summary -->
+  <div class="insight-block">
+    <div class="insight-block-title">📄 Summary</div>
+    <p>
+      Ethan Mollick (Wharton) argues that as AI models proliferate, the challenge is no longer <em>whether</em> to use AI but <em>which</em> AI model is right for your specific job. Standard benchmarks (MMLU, HumanEval etc.) test labs' priorities, not yours. Instead, treat each new model like a job candidate: define the key tasks in your workflow, create structured test prompts covering easy to hard variants, evaluate outputs against your quality bar, and decide whether to "hire" the model for that role. This mirrors how good hiring works — you test for job-relevant skills, not abstract intelligence.
+    </p>
+  </div>
+
+  <!-- Why it matters -->
+  <div class="insight-block">
+    <div class="insight-block-title">💡 Why This Matters for UX Researchers</div>
+    <p>
+      UX researchers are increasingly asked to choose between AI tools for synthesis, analysis, and insight generation. Without a structured evaluation approach, tool selection defaults to brand reputation or recency bias. The "job interview" framework gives researchers a principled way to <strong>evaluate AI tools against real research tasks</strong> — interview synthesis, affinity mapping, usability analysis, persona generation — and make defensible decisions about which tools to integrate into the research stack.
+    </p>
+  </div>
+
+  <!-- How to apply -->
+  <div class="insight-block">
+    <div class="insight-block-title">🔬 How to Apply in UX Research Workflows</div>
+    <ul>
+      <li><strong>Define your key research tasks:</strong> List 5–8 tasks you'd want AI help with (e.g., summarise an interview, identify usability issues from a session transcript, generate a discussion guide).</li>
+      <li><strong>Create a task battery:</strong> For each task, write 3 prompts: easy, medium, and hard. Include edge cases your work commonly involves.</li>
+      <li><strong>Use real data:</strong> Sanitise and use actual interview transcripts, research reports, and design briefs — not toy examples.</li>
+      <li><strong>Score on your criteria:</strong> Accuracy, completeness, tone appropriateness, actionability. Use a simple 1–5 scale.</li>
+      <li><strong>Document results:</strong> Keep a shared evaluation doc so the team builds institutional knowledge about which tools work for which research phases.</li>
+      <li><strong>Re-test after major model updates:</strong> GPT-4o vs GPT-4o-mini, Claude Sonnet vs Haiku — each has different sweet spots.</li>
+    </ul>
+  </div>
+
+  <!-- Pitfalls -->
+  <div class="insight-block">
+    <div class="insight-block-title">⚠️ Pitfalls &amp; Risks</div>
+    <ul>
+      <li><strong>Generic benchmark trap:</strong> A model that aces coding benchmarks may be poor at qualitative synthesis — don't use lab benchmarks as proxies for your work.</li>
+      <li><strong>One-time evaluation:</strong> Model capabilities change with updates; a model that failed your test 3 months ago may now be excellent.</li>
+      <li><strong>Overfitting the interview:</strong> Models can "perform" well on structured prompts but fail on ambiguous, real-world research inputs — include noisy data in your tests.</li>
+      <li><strong>Ignoring cost/speed trade-offs:</strong> The "best" model for a task may be too slow or expensive for routine research use — evaluate fit for purpose.</li>
+    </ul>
+  </div>
+
+  <!-- Copilot prompts -->
+  <div class="copilot-prompt-block">
+    <h4>🤖 Try This in Copilot</h4>
+    <p style="font-size:.85rem;color:var(--text-s);margin-bottom:14px">Use these prompts to run a structured evaluation of AI models for UX research tasks:</p>
+    <div class="prompt-example">
+      Task evaluation — Interview synthesis: Here is a raw transcript from a 30-minute user interview about [topic]: [paste transcript]. Summarise the 3–5 most significant insights, quote at least 2 direct user statements per insight, and flag any contradictions or ambiguities in the data. Do not add interpretations that aren't supported by what was said.
+    </div>
+    <div class="prompt-example">
+      Task evaluation — Usability issue identification: Here is a think-aloud transcript from a usability session on [feature]: [paste transcript]. Identify all usability issues mentioned or implied by the participant. For each issue, rate severity (1–3), identify the UI element involved, and suggest one possible design improvement. Note any issues where you are uncertain.
+    </div>
+  </div>
+
+  <hr class="divider" />
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <a href="../Articles/cybernetic-teammate.html" class="btn btn-outline">← The Cybernetic Teammate</a>
+    <a href="../index.html" class="btn btn-primary">All Articles →</a>
+  </div>
+
+</main>
+
+<div id="chat-widget">
+  <div class="chat-panel">
+    <div class="chat-head">
+      <div class="chat-head-avatar">⚡</div>
+      <div class="chat-head-info"><strong>UXR Research Assistant</strong><span>Ask about evaluating AI</span></div>
+    </div>
+    <div class="chat-body">
+      <div class="chat-msg bot">Thinking about evaluating AI tools for your research workflow? I can suggest related articles and prompt templates.</div>
+    </div>
+    <div class="chat-foot">
+      <input class="chat-input" type="text" placeholder="Ask a question…" />
+      <button class="chat-send">Send</button>
+    </div>
+  </div>
+  <button class="chat-toggle" aria-label="Open chat">💬</button>
+</div>
+<div id="toast"></div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2026 AI UXR Intelligence Hub</span>
+      <a href="../index.html" style="color:rgba(255,255,255,.6)">← Back to Hub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../Scripts/articles-data.js"></script>
+<script src="../Scripts/main.js"></script>
+</body>
+</html>

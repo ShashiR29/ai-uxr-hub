@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for UX Researchers — Intelligence Hub</title>
+  <meta name="description" content="Curated AI research articles with structured insights for UX researchers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Assets/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo">
+      <span>⚡</span> AI UXR Hub
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./Themes/future-of-work.html">Themes</a>
+      <a href="./PLaybook/index.html">Playbook</a>
+    </div>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Hero ──────────────────────────────────── -->
+<header class="hero" role="banner">
+  <div class="container">
+    <h1>AI for UX Researchers</h1>
+    <p>Curated articles, structured insights, and practical frameworks — built for researchers navigating the AI era.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">162 Curated Articles</span>
+      <span class="hero-pill">6 Research Themes</span>
+      <span class="hero-pill">Practical Playbooks</span>
+      <span class="hero-pill">Copilot Prompts</span>
+    </div>
+    <a href="#articles" class="btn btn-outline" style="border-color:rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.12)">
+      Explore Articles ↓
+    </a>
+  </div>
+</header>
+
+<!-- ── Featured Themes ───────────────────────── -->
+<section class="section" id="themes" aria-labelledby="themes-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="themes-heading">Featured Themes</h2>
+      <p>Browse articles organised by research relevance</p>
+    </div>
+    <div class="themes-grid" id="themes-grid">
+      <!-- Populated by JS -->
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+      <div class="skeleton" style="height:140px;border-radius:12px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AI Compete News ──────────────────────────── -->
+<section class="section compete-news-section" id="compete-news" aria-labelledby="compete-news-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="compete-news-heading">📰 AI Compete News</h2>
+      <p>The latest AI industry stories, incidents, and controversies — curated for UX researchers.</p>
+    </div>
+    <div class="articles-grid" id="compete-news-grid" role="list" aria-label="AI Compete News articles">
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <button class="btn btn-outline" id="compete-news-toggle">Show all 40 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Saved Articles ─────────────────────────── -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div id="saved-section" style="display:none">
+      <h3 id="saved-heading">⭐ Saved Articles</h3>
+      <div class="saved-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Articles ───────────────────────────────── -->
+<section class="section" id="articles" aria-labelledby="articles-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="articles-heading">All Articles</h2>
+      <p>162 curated articles with structured UX research insights</p>
+    </div>
+
+    <!-- Search -->
+    <div class="search-wrap" role="search">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input
+        id="search-input"
+        class="search-input"
+        type="search"
+        placeholder="Search articles, topics, keywords…"
+        aria-label="Search articles"
+      />
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" role="group" aria-label="Filter by theme">
+      <button class="filter-btn active" data-theme="all">All</button>
+      <button class="filter-btn" data-theme="Future of Work">💼 Future of Work</button>
+      <button class="filter-btn" data-theme="AI Technology">🤖 AI Technology</button>
+      <button class="filter-btn" data-theme="Trust &amp; Safety in AI">🛡️ Trust &amp; Safety</button>
+      <button class="filter-btn" data-theme="Human + AI Workflows">🤝 Human + AI</button>
+      <button class="filter-btn" data-theme="AI &amp; Education">🎓 AI &amp; Education</button>
+      <button class="filter-btn" data-theme="Evaluating AI Outputs">🔍 Evaluating AI</button>
+      <button class="filter-btn filter-btn--compete" data-theme="__compete">📰 Compete News</button>
+    </div>
+
+    <!-- Articles grid (JS renders here) -->
+    <div class="articles-grid" id="articles-grid" role="list" aria-live="polite" aria-label="Articles list">
+      <!-- Loading skeletons -->
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+      <div class="card skeleton" style="height:220px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Chatbot Widget ─────────────────────────── -->
+<div id="chat-widget" aria-label="Research assistant chat">
+  <div class="chat-panel" role="dialog" aria-label="AI Research Assistant">
+    <div class="chat-head">
+      <div class="chat-head-avatar" aria-hidden="true">⚡</div>
+      <div class="chat-head-info">
+        <strong>UXR Research Assistant</strong>
+        <span>Ask how to apply AI concepts in research</span>
+      </div>
+    </div>
+    <div class="chat-body" role="log" aria-live="polite">
+      <div class="chat-msg bot">
+        👋 Hi! I can help you find the right articles and apply AI concepts in your UX research workflow. What are you working on?
+      </div>
+      <div class="chat-msg bot">
+        Try asking: <em>"How do I evaluate AI outputs?"</em> or <em>"Which articles cover AI trust?"</em>
+      </div>
+    </div>
+    <div class="chat-foot">
+      <input
+        class="chat-input"
+        type="text"
+        placeholder="Ask about AI in UX research…"
+        aria-label="Chat message"
+      />
+      <button class="chat-send" aria-label="Send message">Send</button>
+    </div>
+  </div>
+  <button class="chat-toggle" aria-label="Open research assistant chat" aria-expanded="false">💬</button>
+</div>
+
+<!-- ── Toast notification ─────────────────────── -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- ── Footer ─────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>⚡ AI UXR Intelligence Hub</h4>
+        <p>A curated collection of AI articles with structured insights for UX researchers. All articles are sourced from the CTQ (Critical to Quality) reading list.</p>
+      </div>
+      <div>
+        <h4>Themes</h4>
+        <ul>
+          <li><a href="./Themes/future-of-work.html">Future of Work</a></li>
+          <li><a href="./Themes/ai-technology.html">AI Technology</a></li>
+          <li><a href="./Themes/trust-safety.html">Trust &amp; Safety</a></li>
+          <li><a href="./Themes/human-ai-workflows.html">Human + AI Workflows</a></li>
+          <li><a href="./Themes/ai-education.html">AI &amp; Education</a></li>
+          <li><a href="./Themes/evaluating-ai-outputs.html">Evaluating AI Outputs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./PLaybook/index.html">UX Research Playbook</a></li>
+          <li><a href="./Articles/llms-sycophancy.html">LLM Sycophancy</a></li>
+          <li><a href="./Articles/cybernetic-teammate.html">Cybernetic Teammate</a></li>
+          <li><a href="./Articles/giving-ai-job-interview.html">AI Job Interview</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AI UXR Intelligence Hub</span>
+      <span>Built for UX Researchers · No frameworks · Vanilla JS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./Scripts/articles-data.js"></script>
+<script src="./Scripts/main.js"></script>
+</body>
+</html>
