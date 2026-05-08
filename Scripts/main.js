@@ -6,6 +6,8 @@
 
 // ── Config ──────────────────────────────────────────────────────
 const SAVE_KEY   = 'aiuxr-saved-articles';
+const READ_KEY   = 'aiuxr-read-articles';
+const OPEN_KEY   = 'aiuxr-opened-articles';
 const THEME_META = {
   'Future of Work':          { slug: 'future-of-work',          icon: '💼', file: 'Themes/future-of-work.html' },
   'AI Technology':           { slug: 'ai-technology',           icon: '🤖', file: 'Themes/ai-technology.html' },
@@ -52,6 +54,38 @@ function getSaved() {
 function setSaved(arr) { localStorage.setItem(SAVE_KEY, JSON.stringify(arr)); }
 function isSaved(id) { return getSaved().some(a => a.id === id); }
 
+// ── Read / Open Tracking ───────────────────────────────────────
+function getRead()   { try { return JSON.parse(localStorage.getItem(READ_KEY) || '[]'); } catch { return []; } }
+function getOpened() { try { return JSON.parse(localStorage.getItem(OPEN_KEY) || '[]'); } catch { return []; } }
+function isRead(id)   { return getRead().some(a => a.id === id); }
+function isOpened(id) { return getOpened().some(a => a.id === id); }
+
+function markOpened(article) {
+  const opened = getOpened();
+  if (!isOpened(article.id)) {
+    opened.push({ id: article.id, theme: article.theme });
+    localStorage.setItem(OPEN_KEY, JSON.stringify(opened));
+    renderReadingStats();
+  }
+}
+
+function toggleRead(article) {
+  let read = getRead();
+  if (isRead(article.id)) {
+    read = read.filter(a => a.id !== article.id);
+    localStorage.setItem(READ_KEY, JSON.stringify(read));
+    showToast('Marked as unread');
+    renderReadingStats();
+    return false;
+  } else {
+    read.push({ id: article.id, theme: article.theme });
+    localStorage.setItem(READ_KEY, JSON.stringify(read));
+    showToast('Marked as read ✓');
+    renderReadingStats();
+    return true;
+  }
+}
+
 function toggleSave(article) {
   let saved = getSaved();
   if (isSaved(article.id)) {
@@ -82,10 +116,14 @@ function createArticleCard(article) {
     ? `<span class="source-badge">${article.source}</span>`
     : '';
 
+  const read   = isRead(article.id);
+  const opened  = isOpened(article.id);
+
   const card = document.createElement('div');
   card.className = 'card article-card';
   card.dataset.theme = article.theme;
   card.dataset.id = article.id;
+  if (read) card.classList.add('is-read');
 
   card.innerHTML = `
     <div class="card-body">
@@ -93,19 +131,56 @@ function createArticleCard(article) {
         <span class="theme-badge ${themeClass(article.theme)}">${article.theme}</span>
         ${monthHtml}
         ${sourceHtml}
+        ${read ? '<span class="read-badge">✓ Read</span>' : (opened ? '<span class="opened-badge">👁 Opened</span>' : '')}
       </div>
       <h3 style="margin-top:10px">${article.title}</h3>
       <p>${truncate(article.summary, 180)}</p>
     </div>
     <div class="card-footer">
-      <a href="${externalHref}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+      <a href="${externalHref}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-track-open>
         Read Article ↗
       </a>
       ${localLink}
+      <button class="btn-read ${read ? 'read' : ''}" data-id="${article.id}" aria-label="Mark as read">
+        ${read ? '✓ Read' : '○ Mark read'}
+      </button>
       <button class="btn-save ${saved ? 'saved' : ''}" data-id="${article.id}" aria-label="Save article">
         ${saved ? '★ Saved' : '☆ Save'}
       </button>
     </div>`;
+
+  card.querySelector('[data-track-open]').addEventListener('click', () => {
+    markOpened(article);
+    const badge = card.querySelector('.opened-badge, .read-badge');
+    if (!badge && !isRead(article.id)) {
+      const meta = card.querySelector('.card-meta');
+      const span = document.createElement('span');
+      span.className = 'opened-badge';
+      span.textContent = '👁 Opened';
+      meta.appendChild(span);
+    }
+  });
+
+  card.querySelector('.btn-read').addEventListener('click', function () {
+    const nowRead = toggleRead(article);
+    this.textContent = nowRead ? '✓ Read' : '○ Mark read';
+    this.classList.toggle('read', nowRead);
+    card.classList.toggle('is-read', nowRead);
+    const meta = card.querySelector('.card-meta');
+    const existingBadge = meta.querySelector('.read-badge, .opened-badge');
+    if (existingBadge) existingBadge.remove();
+    if (nowRead) {
+      const span = document.createElement('span');
+      span.className = 'read-badge';
+      span.textContent = '✓ Read';
+      meta.appendChild(span);
+    } else if (isOpened(article.id)) {
+      const span = document.createElement('span');
+      span.className = 'opened-badge';
+      span.textContent = '👁 Opened';
+      meta.appendChild(span);
+    }
+  });
 
   card.querySelector('.btn-save').addEventListener('click', function () {
     const nowSaved = toggleSave(article);
@@ -267,6 +342,61 @@ function renderCompeteNewsSection() {
   });
 }
 
+// ── Reading Stats Panel ─────────────────────────────────────────
+function renderReadingStats() {
+  const panel = document.getElementById('reading-stats');
+  if (!panel) return;
+
+  const read   = getRead();
+  const opened = getOpened();
+  const total  = allArticles.length;
+
+  const readCount   = read.length;
+  const openedCount = opened.length;
+
+  // theme breakdown for read articles
+  const byTheme = {};
+  read.forEach(a => { byTheme[a.theme] = (byTheme[a.theme] || 0) + 1; });
+  const topThemes = Object.entries(byTheme).sort((a,b) => b[1]-a[1]).slice(0, 4);
+
+  const pct = n => total ? Math.round((n / total) * 100) : 0;
+
+  panel.innerHTML = `
+    <h3 class="stats-heading">📊 Your Reading</h3>
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num">${openedCount}</span>
+        <span class="stat-label">Opened</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">${readCount}</span>
+        <span class="stat-label">Read</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">${total}</span>
+        <span class="stat-label">Total</span>
+      </div>
+    </div>
+    <div class="stats-bar-wrap" title="${pct(readCount)}% read">
+      <div class="stats-bar-opened" style="width:${pct(openedCount)}%"></div>
+      <div class="stats-bar-read" style="width:${pct(readCount)}%"></div>
+    </div>
+    <p class="stats-pct">${pct(readCount)}% read · ${pct(openedCount)}% opened</p>
+    ${topThemes.length ? `
+    <div class="stats-themes">
+      <p class="stats-themes-label">Most read themes</p>
+      ${topThemes.map(([theme, count]) =>
+        `<div class="stats-theme-row">
+          <span>${THEME_META[theme]?.icon || ''} ${theme}</span>
+          <span class="stats-theme-count">${count}</span>
+        </div>`
+      ).join('')}
+    </div>` : '<p class="stats-empty">Start reading to see your stats</p>'}
+  `;
+}
+
 // ── Theme Page: render articles by theme ────────────────────────
 function renderThemePage(themeName) {
   // Decode HTML entities that may appear in data-theme attribute
@@ -276,17 +406,64 @@ function renderThemePage(themeName) {
 }
 
 // ── Chatbot Widget ───────────────────────────────────────────────
-const BOT_RESPONSES = [
-  "Great question! I'd suggest exploring the **'Evaluating AI Outputs'** theme for structured frameworks UX researchers can apply.",
-  "Try searching for articles on **trust** in AI — there's rich material on how users perceive and interact with AI systems.",
-  "The **Cybernetic Teammate** article has a great breakdown on how AI collaboration changes team dynamics in research.",
-  "For research workflows, check out the **Human + AI Workflows** theme — it covers mental models and productivity patterns.",
-  "Interested in measuring AI effectiveness? Look at the article on **Measuring AI Ability to Complete Long Tasks** — it reframes evaluation nicely.",
-  "The **'Giving your AI a Job Interview'** article is a great starting point for evaluating AI tools before using them in research.",
-  "Check the **Playbook** section for structured guidance on evaluating AI outputs and designing Copilot experiences.",
-  "I recommend exploring articles tagged **Evaluating AI Outputs** for practical UX research evaluation frameworks.",
+const CHAT_RULES = [
+  {
+    keywords: ['trust','safe','safety','risk','danger','harmful','bias'],
+    reply: 'The **Trust & Safety in AI** theme has the most coverage. Key articles:\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agents ↗</a>\n• <a href="https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/" target="_blank">CEO uses ChatGPT to void contract ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-grandmother-jail-mistake" target="_blank">AI jails innocent grandmother ↗</a>'
+  },
+  {
+    keywords: ['evaluat','assess','measur','quality','output','hallucin'],
+    reply: 'For evaluating AI outputs try:\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/giving-ai-job-interview.html" target="_blank">Giving Your AI a Job Interview ↗</a>\n• <a href="https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/" target="_blank">Google AI Overviews wrong 10% of the time ↗</a>\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/llms-sycophancy.html" target="_blank">LLM Sycophancy ↗</a>'
+  },
+  {
+    keywords: ['work','job','employ','productiv','workflow','team','collab'],
+    reply: 'On AI and the future of work:\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/cybernetic-teammate.html" target="_blank">The Cybernetic Teammate ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-brain-fry" target="_blank">AI Brain Fry: burnout from AI tools ↗</a>\n• <a href="https://fortune.com/2026/03/24/perplexity-ceo-ai-layoffs-not-bad-people-hate-jobs-entrepreneurship/" target="_blank">Perplexity CEO on AI layoffs ↗</a>'
+  },
+  {
+    keywords: ['education','learn','student','school','teach','university'],
+    reply: 'On AI in education:\n• <a href="https://www.techdirt.com/2026/03/06/were-training-students-to-write-worse-to-prove-theyre-not-robots-and-its-pushing-them-to-use-more-ai/" target="_blank">Training students to write worse ↗</a>\n• The **AI & Education** theme has more — use the filter buttons above.'
+  },
+  {
+    keywords: ['agent','autonom','agentic'],
+    reply: 'On AI agents going rogue or behaving unexpectedly:\n• <a href="https://futurism.com/artificial-intelligence/ai-agent-crypto-mining" target="_blank">AI agent starts mining crypto ↗</a>\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agent Sev-1 incidents ↗</a>\n• <a href="https://www.cio.com/article/4152601/without-controls-an-ai-agent-can-cost-more-than-an-employee.html" target="_blank">AI agents can cost more than employees ↗</a>'
+  },
+  {
+    keywords: ['privacy','surveil','data','track','spy'],
+    reply: 'On AI and privacy:\n• <a href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/" target="_blank">Meta tracking employee keystrokes ↗</a>\n• <a href="https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/" target="_blank">Meta smart glasses lawsuit ↗</a>'
+  },
+  {
+    keywords: ['law','legal','court','sue','lawsuit','copyright'],
+    reply: 'On AI and legal issues:\n• <a href="https://techcrunch.com/2026/01/29/music-publishers-sue-anthropic-for-3b-over-flagrant-piracy-of-20000-works/" target="_blank">Music publishers sue Anthropic $3B ↗</a>\n• <a href="https://www.reuters.com/legal/litigation/sullivan-cromwell-law-firm-apologizes-ai-hallucinations-court-filing-2026-04-21/" target="_blank">Law firm apologizes for AI hallucinations ↗</a>\n• <a href="https://techcrunch.com/2026/02/15/longtime-npr-host-david-greene-sues-google-over-notebooklm-voice/" target="_blank">NPR host sues Google over NotebookLM voice ↗</a>'
+  },
+  {
+    keywords: ['playbook','prompt','framework','method','how to','research'],
+    reply: 'Check the <a href="./PLaybook/index.html">UX Research Playbook ↗</a> for structured frameworks and Copilot prompts designed for UX researchers.'
+  },
+  {
+    keywords: ['save','saved','bookmark','read','progress','stat'],
+    reply: 'You can **Save** any article using the ☆ button on the card, and **Mark as Read** using the ○ button. Your reading stats are shown in the panel on the right side of the page.'
+  },
 ];
-let botIndex = 0;
+
+const FALLBACK_REPLIES = [
+  'Try using the **search bar** or **theme filter buttons** to find articles on that topic.',
+  'I\'m best at finding articles by topic. Try keywords like "trust", "agents", "education", or "privacy".',
+  'The **All Articles** section below is searchable — type a keyword to filter instantly.',
+];
+let fallbackIdx = 0;
+
+function getBotReply(text) {
+  const q = text.toLowerCase();
+  for (const rule of CHAT_RULES) {
+    if (rule.keywords.some(k => q.includes(k))) return rule.reply;
+  }
+  // search allArticles for a title match
+  const match = allArticles.find(a => a.title.toLowerCase().split(' ').some(w => w.length > 4 && q.includes(w)));
+  if (match) {
+    return `I found a relevant article: <strong>${match.title}</strong><br><a href="${match.link}" target="_blank" rel="noopener noreferrer">Read it here ↗</a>`;
+  }
+  return FALLBACK_REPLIES[fallbackIdx++ % FALLBACK_REPLIES.length];
+}
 
 function initChatbot() {
   const widget = document.getElementById('chat-widget');
@@ -307,17 +484,13 @@ function initChatbot() {
     if (!text) return;
     appendMsg(text, 'user');
     input.value = '';
-    setTimeout(() => {
-      const reply = BOT_RESPONSES[botIndex % BOT_RESPONSES.length];
-      botIndex++;
-      appendMsg(reply, 'bot');
-    }, 600);
+    setTimeout(() => appendMsg(getBotReply(text), 'bot'), 500);
   }
 
   function appendMsg(text, type) {
     const msg = document.createElement('div');
     msg.className = `chat-msg ${type}`;
-    msg.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    msg.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
     body.appendChild(msg);
     body.scrollTop = body.scrollHeight;
   }
@@ -363,6 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     renderHomepageArticles();
     renderSavedSection();
+    renderReadingStats();
   }
 
   if (isThemePage) {

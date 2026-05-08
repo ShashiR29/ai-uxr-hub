@@ -140,6 +140,31 @@ li { margin-bottom: .35em; }
 .card-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .article-month { font-size: .72rem; font-weight: 500; color: var(--text-s); background: var(--surface-2, #f1f5f9); border-radius: 99px; padding: 3px 10px; letter-spacing: .02em; }
 .source-badge { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; background: #fff3cd; color: #7a4e00; border-radius: 99px; padding: 2px 9px; border: 1px solid #ffd97d; }
+.read-badge { font-size: .68rem; font-weight: 700; background: #d1fae5; color: #065f46; border-radius: 99px; padding: 2px 9px; border: 1px solid #6ee7b7; }
+.opened-badge { font-size: .68rem; font-weight: 600; background: #ede9fe; color: #4c1d95; border-radius: 99px; padding: 2px 9px; border: 1px solid #c4b5fd; }
+.is-read { opacity: .75; }
+.btn-read { border: 1px solid var(--border); border-radius: var(--radius-s); padding: 5px 12px; font-size: .8rem; font-weight: 500; cursor: pointer; background: transparent; color: var(--text-s); transition: background .15s, color .15s; white-space: nowrap; }
+.btn-read:hover { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+.btn-read.read { background: #d1fae5; color: #065f46; border-color: #6ee7b7; font-weight: 600; }
+
+/* ---- Reading Stats Panel ---- */
+.reading-stats-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 28px; box-shadow: var(--shadow); display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+.stats-heading { font-size: .95rem; font-weight: 700; margin: 0 0 14px; color: var(--text); }
+.stats-row { display: flex; gap: 0; align-items: center; }
+.stat-item { text-align: center; padding: 0 18px; }
+.stat-item:first-child { padding-left: 0; }
+.stat-num { display: block; font-size: 1.6rem; font-weight: 700; color: var(--primary); line-height: 1; }
+.stat-label { font-size: .72rem; color: var(--text-s); text-transform: uppercase; letter-spacing: .04em; }
+.stat-divider { width: 1px; height: 36px; background: var(--border); }
+.stats-bar-wrap { position: relative; height: 8px; background: var(--surface-2, #f1f5f9); border-radius: 99px; margin: 12px 0 4px; min-width: 160px; flex: 1; overflow: hidden; }
+.stats-bar-opened { position: absolute; top: 0; left: 0; height: 100%; background: #c4b5fd; border-radius: 99px; transition: width .4s; }
+.stats-bar-read { position: absolute; top: 0; left: 0; height: 100%; background: #34d399; border-radius: 99px; transition: width .4s; }
+.stats-pct { font-size: .72rem; color: var(--text-s); margin: 2px 0 0; }
+.stats-themes { margin-top: 12px; min-width: 180px; }
+.stats-themes-label { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--text-s); margin: 0 0 6px; font-weight: 600; }
+.stats-theme-row { display: flex; justify-content: space-between; font-size: .82rem; padding: 3px 0; border-bottom: 1px solid var(--border); }
+.stats-theme-count { font-weight: 700; color: var(--primary); }
+.stats-empty { font-size: .82rem; color: var(--text-s); margin: 8px 0 0; font-style: italic; }
 
 /* ---- AI Compete News Section ---- */
 .compete-news-section { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border-top: 3px solid #fbbf24; border-bottom: 3px solid #fbbf24; }
