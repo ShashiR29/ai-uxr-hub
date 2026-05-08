@@ -148,9 +148,9 @@ li { margin-bottom: .35em; }
 .btn-read.read { background: #d1fae5; color: #065f46; border-color: #6ee7b7; font-weight: 600; }
 
 /* ---- Reading Stats Panel ---- */
-.reading-stats-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 28px; box-shadow: var(--shadow); display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
-.stats-heading { font-size: .95rem; font-weight: 700; margin: 0 0 14px; color: var(--text); }
-.stats-row { display: flex; gap: 0; align-items: center; }
+.reading-stats-panel { background: linear-gradient(135deg,#f0f7ff 0%,#e8f4fd 100%); border: 1.5px solid #93c5fd; border-left: 4px solid #3b82f6; border-radius: var(--radius); padding: 20px 24px; margin-bottom: 28px; box-shadow: 0 2px 8px rgba(59,130,246,.1); }
+.stats-heading { font-size: .95rem; font-weight: 700; margin: 0 0 14px; color: #1e40af; }
+.stats-row { display: flex; gap: 0; align-items: center; margin-bottom: 12px; }
 .stat-item { text-align: center; padding: 0 18px; }
 .stat-item:first-child { padding-left: 0; }
 .stat-num { display: block; font-size: 1.6rem; font-weight: 700; color: var(--primary); line-height: 1; }

@@ -362,7 +362,7 @@ function renderReadingStats() {
   const pct = n => total ? Math.round((n / total) * 100) : 0;
 
   panel.innerHTML = `
-    <h3 class="stats-heading">📊 Your Reading</h3>
+    <h3 class="stats-heading">📊 Your Reading Stats</h3>
     <div class="stats-row">
       <div class="stat-item">
         <span class="stat-num">${openedCount}</span>
@@ -371,7 +371,12 @@ function renderReadingStats() {
       <div class="stat-divider"></div>
       <div class="stat-item">
         <span class="stat-num">${readCount}</span>
-        <span class="stat-label">Read</span>
+        <span class="stat-label">Marked Read</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">${total - readCount}</span>
+        <span class="stat-label">Unread</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
@@ -383,7 +388,7 @@ function renderReadingStats() {
       <div class="stats-bar-opened" style="width:${pct(openedCount)}%"></div>
       <div class="stats-bar-read" style="width:${pct(readCount)}%"></div>
     </div>
-    <p class="stats-pct">${pct(readCount)}% read · ${pct(openedCount)}% opened</p>
+    <p class="stats-pct">${pct(readCount)}% marked read &nbsp;&middot;&nbsp; ${pct(openedCount)}% opened</p>
     ${topThemes.length ? `
     <div class="stats-themes">
       <p class="stats-themes-label">Most read themes</p>
@@ -393,7 +398,7 @@ function renderReadingStats() {
           <span class="stats-theme-count">${count}</span>
         </div>`
       ).join('')}
-    </div>` : '<p class="stats-empty">Start reading to see your stats</p>'}
+    </div>` : '<p class="stats-empty">Click ○ Mark read on any article to track your progress</p>'}
   `;
 }
 
