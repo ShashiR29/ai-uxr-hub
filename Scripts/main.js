@@ -414,7 +414,7 @@ function renderThemePage(themeName) {
 const CHAT_RULES = [
   {
     keywords: ['trust','safe','safety','risk','danger','harmful','bias'],
-    reply: 'The **Trust & Safety in AI** theme has the most coverage. Key articles:\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agents ↗</a>\n• <a href="https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/" target="_blank">CEO uses ChatGPT to void contract ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-grandmother-jail-mistake" target="_blank">AI jails innocent grandmother ↗</a>'
+    reply: `The **Trust & Safety in AI** theme has the most coverage. Key articles:\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agents ↗</a>\n• <a href="https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/" target="_blank">CEO uses ChatGPT to void contract ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-grandmother-jail-mistake" target="_blank">AI jails innocent grandmother ↗</a>`
   },
   {
     keywords: ['evaluat','assess','measur','quality','output','hallucin'],
@@ -430,7 +430,7 @@ const CHAT_RULES = [
   },
   {
     keywords: ['agent','autonom','agentic'],
-    reply: 'On AI agents going rogue or behaving unexpectedly:\n• <a href="https://futurism.com/artificial-intelligence/ai-agent-crypto-mining" target="_blank">AI agent starts mining crypto ↗</a>\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agent Sev-1 incidents ↗</a>\n• <a href="https://www.cio.com/article/4152601/without-controls-an-ai-agent-can-cost-more-than-an-employee.html" target="_blank">AI agents can cost more than employees ↗</a>'
+    reply: `On AI agents going rogue or behaving unexpectedly:\n• <a href="https://futurism.com/artificial-intelligence/ai-agent-crypto-mining" target="_blank">AI agent starts mining crypto ↗</a>\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agent Sev-1 incidents ↗</a>\n• <a href="https://www.cio.com/article/4152601/without-controls-an-ai-agent-can-cost-more-than-an-employee.html" target="_blank">AI agents can cost more than employees ↗</a>`
   },
   {
     keywords: ['privacy','surveil','data','track','spy'],
