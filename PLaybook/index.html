@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UX Research Playbook — AI UXR Hub</title>
-  <meta name="description" content="Structured guidance for UX researchers on evaluating AI outputs, designing Copilot experiences, measuring trust in AI, and using AI in research workflows." />
+  <title>Go Deeper — AI UXR Hub</title>
+  <meta name="description" content="Curated reading paths and next steps for UX researchers who want to explore AI topics further — studies, experiments, papers, and projects." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
     <div class="nav-links" id="nav-links">
       <a href="../index.html">Home</a>
       <a href="../Themes/future-of-work.html">Themes</a>
-      <a href="./index.html" class="active">Playbook</a>
+      <a href="./index.html" class="active">Go Deeper</a>
     </div>
     <button class="nav-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -27,22 +27,103 @@
 <!-- Hero -->
 <header style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 60%,#0f3460 100%);color:#fff;padding:64px 0 48px;text-align:center">
   <div class="container">
-    <div style="font-size:3rem;margin-bottom:12px">📋</div>
-    <h1 style="color:#fff;margin-bottom:14px">UX Research Playbook</h1>
-    <p style="opacity:.85;max-width:600px;margin:0 auto;font-size:1.05rem">Practical frameworks for conducting UX research in the age of AI. Structured guidance, Copilot prompts, and links to curated reading.</p>
+    <div style="font-size:3rem;margin-bottom:12px">🔭</div>
+    <h1 style="color:#fff;margin-bottom:14px">Go Deeper</h1>
+    <p style="opacity:.85;max-width:620px;margin:0 auto;font-size:1.05rem">Start with the articles, then explore further — run a study, read a paper, try an experiment, or kick off a project. Here's where each topic can take you next.</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px">
-      <a href="#evaluating-ai" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Evaluating AI Outputs</a>
-      <a href="#designing-copilot" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Designing Copilot Experiences</a>
-      <a href="#measuring-trust" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Measuring Trust in AI</a>
-      <a href="#ai-in-workflows" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">AI in Research Workflows</a>
+      <a href="#trust-ai" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Trust in AI</a>
+      <a href="#ai-collaboration" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Human–AI Collaboration</a>
+      <a href="#evaluating-outputs" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">Evaluating AI Outputs</a>
+      <a href="#ai-adoption" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">AI Adoption & Behaviour</a>
+      <a href="#ai-tools-uxr" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)">AI Tools for UXR</a>
     </div>
   </div>
 </header>
 
 <main>
 
-<!-- ── Section 1: Evaluating AI Outputs ── -->
-<section class="section" id="evaluating-ai">
+<!-- ── Topic 1: Trust in AI ── -->
+<section class="section" id="trust-ai">
+  <div class="container">
+    <div class="playbook-section">
+      <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+        <span style="background:#fce4ec;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🛡️</span>
+        Trust in AI
+      </h2>
+
+      <h3 style="margin-bottom:12px">📚 Start here</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+        <a href="https://www.schneier.com/blog/archives/2023/12/ai-and-trust.html" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">AI and Trust — Bruce Schneier ↗</a>
+        <a href="../Articles/llms-sycophancy.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">LLMs Try to Please You — and That's a Problem</a>
+        <a href="https://www.psychologytoday.com/us/blog/psych-unseen/202507/can-ai-chatbots-worsen-psychosis-and-cause-delusions" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">Can AI Chatbots Worsen Psychosis? — Psychology Today ↗</a>
+        <a href="../Themes/trust-safety.html" class="btn btn-ghost btn-sm" style="justify-content:flex-start">→ See all Trust & Safety articles</a>
+      </div>
+
+      <h3 style="margin-bottom:16px">🚀 What UXRs can explore next</h3>
+      <div class="playbook-grid">
+        <div class="playbook-item">
+          <h4>🔬 Run a study</h4>
+          <p>Design a trust calibration study: show users AI outputs of varying quality and measure whether they can tell good from bad. How does trust shift after AI makes a visible mistake?</p>
+        </div>
+        <div class="playbook-item">
+          <h4>📄 Read the research</h4>
+          <p><a href="https://dl.acm.org/doi/10.1145/3411764.3445717" target="_blank" rel="noopener">Does the Whole Exceed its Parts? (CHI 2021)</a> — on how people calibrate trust in AI systems. Also: <a href="https://arxiv.org/abs/2402.01822" target="_blank" rel="noopener">Anthropic's Sleeper Agents paper</a> on deceptive AI.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>⚡ Try in your product</h4>
+          <p>Add a "confidence indicator" to an AI feature in your product and test whether it changes user trust behaviour. Even a lightweight A/B test on wording ("I'm not sure" vs. no disclaimer) reveals trust dynamics.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>💡 Project idea</h4>
+          <p>Map the "trust journey" for your product's AI features: where do new users start, when does trust peak, and what triggers a trust breakdown? Build a trust lifecycle diagram for your team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Topic 2: Human–AI Collaboration ── -->
+<section class="section" id="ai-collaboration" style="background:var(--bg)">
+  <div class="container">
+    <div class="playbook-section">
+      <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+        <span style="background:#e8eaf6;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🤝</span>
+        Human–AI Collaboration
+      </h2>
+
+      <h3 style="margin-bottom:12px">📚 Start here</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+        <a href="../Articles/cybernetic-teammate.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Cybernetic Teammate — Ethan Mollick</a>
+        <a href="https://www.oneusefulthing.org/p/on-working-with-wizards" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">On Working with Wizards ↗</a>
+        <a href="https://www.exponentialview.co/p/six-mental-models-for-working-with" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">Six Mental Models for Working with AI ↗</a>
+        <a href="../Themes/human-ai-workflows.html" class="btn btn-ghost btn-sm" style="justify-content:flex-start">→ See all Human + AI Workflow articles</a>
+      </div>
+
+      <h3 style="margin-bottom:16px">🚀 What UXRs can explore next</h3>
+      <div class="playbook-grid">
+        <div class="playbook-item">
+          <h4>🔬 Run a study</h4>
+          <p>Observe how people actually hand off work to AI: when do they delegate fully, when do they co-create, and when do they override? Map the "centaur" vs. "cyborg" patterns in your product.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>📄 Read the research</h4>
+          <p><a href="https://www.hbs.edu/ris/Publication%20Files/24-013_d9b45b68-9e74-42d6-a1c6-c72fb70c7571.pdf" target="_blank" rel="noopener">Navigating the Jagged Technological Frontier (Harvard/BCG 2023)</a> — the landmark study on Centaur vs. Cyborg work patterns with AI.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>⚡ Experiment in VS Code</h4>
+          <p>Use GitHub Copilot for a week on a real task (e.g., building a prototype or writing a script). Journal your experience: when did you accept suggestions? When did you reject? What surprised you? Share findings with the team.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>💡 Project idea</h4>
+          <p>Create a "collaboration patterns" taxonomy for your product: categorise the different ways users work with your AI features. Use it as a framework for future studies and design reviews.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Topic 3: Evaluating AI Outputs ── -->
+<section class="section" id="evaluating-outputs">
   <div class="container">
     <div class="playbook-section">
       <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
@@ -50,229 +131,112 @@
         Evaluating AI Outputs
       </h2>
 
-      <div class="playbook-grid" style="margin-bottom:24px">
-        <div class="playbook-item">
-          <h4>What It Is</h4>
-          <p>A systematic approach to assessing whether AI-generated content is accurate, complete, appropriately scoped, and fit for research use — going beyond surface plausibility to verify quality.</p>
-        </div>
-        <div class="playbook-item">
-          <h4>When to Use It</h4>
-          <p>Whenever AI tools are used to synthesise interview data, generate themes, summarise findings, or produce any research artefact that will influence decisions.</p>
-        </div>
-        <div class="playbook-item">
-          <h4>Time Investment</h4>
-          <p>15–30 min per major AI-generated artefact for spot-check validation. Build it into your research process as standard practice — not an optional audit.</p>
-        </div>
+      <h3 style="margin-bottom:12px">📚 Start here</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+        <a href="../Articles/giving-ai-job-interview.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">Giving Your AI a Job Interview</a>
+        <a href="../Articles/llms-sycophancy.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">LLMs Try to Please You — sycophancy bias</a>
+        <a href="https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Shape of AI: Jaggedness, Bottlenecks and Salients ↗</a>
+        <a href="../Themes/evaluating-ai-outputs.html" class="btn btn-ghost btn-sm" style="justify-content:flex-start">→ See all Evaluating AI Outputs articles</a>
       </div>
 
-      <h3 style="margin-bottom:16px">Step-by-Step Framework</h3>
-      <ol style="font-size:.92rem;line-height:1.9">
-        <li><strong>Define your quality bar first</strong> — before generating anything, specify what "good" looks like for this specific task.</li>
-        <li><strong>Use the job interview approach</strong> — test the AI on 3 representative tasks (easy, medium, hard) before relying on it for real work.</li>
-        <li><strong>Adversarial prompting</strong> — ask the model to challenge its own output: "What are the weaknesses of this analysis?" or "What did I miss?"</li>
-        <li><strong>Source verification</strong> — for every major insight, trace it back to at least one source quote or data point.</li>
-        <li><strong>Blind validation</strong> — have a team member evaluate the AI output without knowing which insights came from AI vs. human analysis.</li>
-        <li><strong>Document what was AI-generated</strong> — maintain a transparent record for research accountability.</li>
-      </ol>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">🤖 Copilot Prompts</h3>
-      <div class="copilot-prompt-block" style="margin:0">
-        <div class="prompt-example">Critically evaluate this research synthesis: [paste output]. Identify: (1) claims that are not supported by the data, (2) themes that seem too broad or overlapping, (3) perspectives that may be missing, and (4) any signs of sycophancy toward the researcher's framing.</div>
-        <div class="prompt-example">I used AI to generate these 5 research themes: [paste themes]. For each theme, give me: the strongest counterargument, one alternative interpretation, and a question a sceptical stakeholder might ask.</div>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">📚 Key Articles</h3>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="../Articles/llms-sycophancy.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">LLMs Try to Please You — and That's a Problem (full insight page)</a>
-        <a href="../Articles/giving-ai-job-interview.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">Giving Your AI a Job Interview (full insight page)</a>
-        <a href="https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">The Shape of AI: Jaggedness, Bottlenecks and Salients ↗</a>
-        <a href="https://aiascendant.com/p/why-95-of-ai-commentary-fails" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">Why 95% of AI Commentary Fails ↗</a>
+      <h3 style="margin-bottom:16px">🚀 What UXRs can explore next</h3>
+      <div class="playbook-grid">
+        <div class="playbook-item">
+          <h4>🔬 Run a study</h4>
+          <p>Give participants AI-generated research summaries (some accurate, some subtly wrong) and observe: can they spot errors? What do they trust? This reveals how your users judge AI quality in practice.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>📄 Read the research</h4>
+          <p><a href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener">How is ChatGPT's behaviour changing over time? (Stanford 2023)</a> — shows AI performance isn't stable, which matters for evaluation design. Also: <a href="https://aiascendant.com/p/why-95-of-ai-commentary-fails" target="_blank" rel="noopener">Why 95% of AI Commentary Fails</a>.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>⚡ Experiment yourself</h4>
+          <p>Take a recent study you completed. Run the same data through an AI tool (e.g., paste transcripts into Copilot). Compare its themes to your original findings. Where does it add value? Where does it hallucinate?</p>
+        </div>
+        <div class="playbook-item">
+          <h4>💡 Project idea</h4>
+          <p>Build a lightweight "AI output scorecard" for your team: 5 criteria to check before trusting an AI-generated artefact. Pilot it on 3 projects and refine. Share as a team standard.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Section 2: Designing Copilot Experiences ── -->
-<section class="section" id="designing-copilot" style="background:var(--bg)">
+<!-- ── Topic 4: AI Adoption & Behaviour ── -->
+<section class="section" id="ai-adoption" style="background:var(--bg)">
   <div class="container">
     <div class="playbook-section">
       <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
-        <span style="background:#e8eaf6;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">⚡</span>
-        Designing Copilot Experiences
+        <span style="background:#fff3e0;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">💼</span>
+        AI Adoption & Behaviour Change
       </h2>
 
-      <div class="playbook-grid" style="margin-bottom:24px">
-        <div class="playbook-item">
-          <h4>What It Is</h4>
-          <p>Research methods and frameworks for understanding how users perceive, adopt, and work with AI-powered Copilot features — from first exposure to habitual use.</p>
-        </div>
-        <div class="playbook-item">
-          <h4>When to Use It</h4>
-          <p>When designing user studies for Copilot, AI assistant, or embedded AI feature evaluations. Also applicable when testing AI suggestions, completions, and proactive AI behaviours.</p>
-        </div>
-        <div class="playbook-item">
-          <h4>Key Research Questions</h4>
-          <p>Does the user understand what AI is doing and why? Does the AI suggestion help or interrupt? How is trust calibrated over repeated interactions?</p>
-        </div>
+      <h3 style="margin-bottom:12px">📚 Start here</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+        <a href="https://www.nytimes.com/2025/08/16/business/ceos-adopt-ai.html" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">CEOs Want to Adopt AI — But Do They Get It? ↗</a>
+        <a href="https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Bitter Lesson vs The Garbage Can ↗</a>
+        <a href="https://hbr.org/2025/11/how-behavioral-science-can-improve-the-return-on-ai-investments" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">How Behavioral Science Can Improve AI ROI (HBR) ↗</a>
+        <a href="../Themes/future-of-work.html" class="btn btn-ghost btn-sm" style="justify-content:flex-start">→ See all Future of Work articles</a>
       </div>
 
-      <h3 style="margin-bottom:16px">Research Design Principles</h3>
-      <ul style="font-size:.92rem;line-height:1.9">
-        <li><strong>Study mental models early</strong> — participants' prior expectations of AI shape their entire experience. Capture these before exposure.</li>
-        <li><strong>Longitudinal beats snapshot</strong> — trust in AI Copilot features evolves over time; single-session studies miss reliance patterns and calibration.</li>
-        <li><strong>Observe the "handoff moment"</strong> — when do users accept, modify, or reject AI suggestions? This reveals trust calibration.</li>
-        <li><strong>Capture both hits and misses</strong> — only observing successful AI moments creates a false picture. Structure tasks to surface AI failures.</li>
-        <li><strong>Centaur performance benchmark</strong> — measure performance when AI is used (Centaur) vs. without AI (human-only) to understand genuine value.</li>
-        <li><strong>Study diverse user groups</strong> — AI cynics and AI over-trusters both represent critical failure modes; recruit for range.</li>
-      </ul>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">🤖 Copilot Prompts</h3>
-      <div class="copilot-prompt-block" style="margin:0">
-        <div class="prompt-example">I'm designing a user study to evaluate a Copilot feature that [describe feature]. Generate a 6-question discussion guide that explores: mental model of AI, trust calibration, moments of acceptance vs rejection of suggestions, and long-term reliance concerns. Tailor questions for a 45-minute moderated session.</div>
-        <div class="prompt-example">Here are 8 participant quotes from a Copilot usability study: [paste quotes]. Identify patterns around: (1) trust signals and triggers, (2) moments of over-reliance, (3) moments of under-use, and (4) any unmet needs. Do not add interpretations not supported by the quotes.</div>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">📚 Key Articles</h3>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="../Articles/cybernetic-teammate.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Cybernetic Teammate (full insight page)</a>
-        <a href="https://www.oneusefulthing.org/p/on-working-with-wizards" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">On Working with Wizards — Ethan Mollick ↗</a>
-        <a href="https://hbr.org/2025/11/how-behavioral-science-can-improve-the-return-on-ai-investments" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">How Behavioral Science Can Improve AI Investments (HBR) ↗</a>
+      <h3 style="margin-bottom:16px">🚀 What UXRs can explore next</h3>
+      <div class="playbook-grid">
+        <div class="playbook-item">
+          <h4>🔬 Run a study</h4>
+          <p>Interview power users AND non-adopters of an AI feature side by side. What separates them? Is it workflow fit, trust, awareness, or something else? Map the adoption barriers and enablers.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>📄 Read the research</h4>
+          <p><a href="https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/" target="_blank" rel="noopener">Impact of AI on Developer Productivity (Microsoft Research)</a> — rigorous study on whether AI tools actually change behaviour and output.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>⚡ Try at Microsoft</h4>
+          <p>Shadow 3 colleagues who use Copilot daily and 3 who don't. Watch their workflows. What moments trigger reaching for AI vs. doing it manually? Build a "moments that matter" map.</p>
+        </div>
+        <div class="playbook-item">
+          <h4>💡 Project idea</h4>
+          <p>Propose a diary study with your product's users: ask them to log every time they use (or deliberately avoid) an AI feature for one week. Analyse the patterns. Share with your PM as input to the adoption strategy.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Section 3: Measuring Trust in AI ── -->
-<section class="section" id="measuring-trust">
+<!-- ── Topic 5: AI Tools for UXR ── -->
+<section class="section" id="ai-tools-uxr">
   <div class="container">
     <div class="playbook-section">
       <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
-        <span style="background:#fce4ec;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🛡️</span>
-        Measuring Trust in AI
+        <span style="background:#e8f5e9;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🧪</span>
+        AI Tools for UXR Practice
       </h2>
 
-      <div class="playbook-grid" style="margin-bottom:24px">
+      <h3 style="margin-bottom:12px">📚 Start here</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+        <a href="https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">Learn to Use AI Like a Surgeon ↗</a>
+        <a href="https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="justify-content:flex-start">Making AI Work: Leadership, Lab, and Crowd ↗</a>
+        <a href="../Articles/cybernetic-teammate.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Cybernetic Teammate</a>
+        <a href="../Themes/ai-technology.html" class="btn btn-ghost btn-sm" style="justify-content:flex-start">→ See all AI Technology articles</a>
+      </div>
+
+      <h3 style="margin-bottom:16px">🚀 What UXRs can explore next</h3>
+      <div class="playbook-grid">
         <div class="playbook-item">
-          <h4>What It Is</h4>
-          <p>A structured approach to measuring how users form, calibrate, and lose trust in AI systems — distinguishing between appropriate trust, over-reliance, and algorithm aversion.</p>
+          <h4>⚡ Experiment in VS Code</h4>
+          <p>Build something small with GitHub Copilot: a research dashboard, a participant screener, an automated analysis script. You don't need to be a developer — just describe what you want in plain English and iterate.</p>
         </div>
         <div class="playbook-item">
-          <h4>When to Use It</h4>
-          <p>When studying any AI feature where user reliance matters: AI recommendations, AI-generated content, AI-assisted decisions, or autonomous AI agents acting on behalf of users.</p>
+          <h4>🔬 Run a self-study</h4>
+          <p>Use AI for your next analysis (theme generation, quote tagging, insight synthesis). Document where it helps and where it hallucinates. Share learnings in a team brown-bag session.</p>
         </div>
         <div class="playbook-item">
-          <h4>Trust Dimensions</h4>
-          <p>Competence trust (can it do the task?), benevolence trust (does it act in my interest?), integrity trust (is it honest?), and predictability (will it behave consistently?).</p>
-        </div>
-      </div>
-
-      <h3 style="margin-bottom:16px">Measurement Framework</h3>
-      <ul style="font-size:.92rem;line-height:1.9">
-        <li><strong>Baseline trust survey</strong> — measure general AI trust attitudes before any product exposure (use validated scales: TPA, TILLTA, or Semantic Differential).</li>
-        <li><strong>Behavioural trust proxies</strong> — observe: does the user act on AI recommendations without verification? Do they modify AI outputs before using them?</li>
-        <li><strong>Trust calibration test</strong> — present AI outputs of known varying quality and measure whether participants correctly identify good vs. poor outputs.</li>
-        <li><strong>Over-reliance detection</strong> — present plausible-but-wrong AI outputs and measure acceptance rate.</li>
-        <li><strong>Algorithm aversion probe</strong> — present identical advice attributed to "an AI" vs. "a human expert" and measure differential trust.</li>
-        <li><strong>Longitudinal trust drift</strong> — measure trust at week 1, week 4, and week 8 to capture attrition vs. habituation patterns.</li>
-      </ul>
-
-      <div style="background:#fff3e0;border-radius:var(--radius);border-left:4px solid #f57c00;padding:20px;margin:20px 0">
-        <h4 style="margin-bottom:8px">⚠️ Watch Out For</h4>
-        <p style="font-size:.88rem;margin:0">Trust can be simultaneously too high (over-reliance) and too low (under-use) in the same user — they may blindly accept AI suggestions on familiar tasks and refuse AI help on unfamiliar ones. Design studies to capture both failure modes.</p>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">🤖 Copilot Prompts</h3>
-      <div class="copilot-prompt-block" style="margin:0">
-        <div class="prompt-example">I'm designing a study to measure trust in an AI recommendation feature for [product]. Generate a mixed-methods measurement plan that includes: a pre-study survey instrument (5–7 questions covering trust dimensions), 3 behavioural observation tasks, and 4 debrief questions to explore trust reasoning. Include specific wording I can use directly.</div>
-        <div class="prompt-example">Based on these participant observations from a trust study: [paste observations]. Classify each instance as: appropriate trust, over-reliance, under-reliance, or algorithm aversion. For each classification, cite the specific behaviour that informed your judgment.</div>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">📚 Key Articles</h3>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="https://www.schneier.com/blog/archives/2023/12/ai-and-trust.html" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">AI and Trust — Bruce Schneier ↗</a>
-        <a href="https://aiiq.substack.com/p/llms-try-to-please-you-and-thats" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">LLMs Try to Please You — sycophancy bias ↗</a>
-        <a href="https://www.psychologytoday.com/us/blog/psych-unseen/202507/can-ai-chatbots-worsen-psychosis-and-cause-delusions" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">Can AI Chatbots Worsen Psychosis? ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Section 4: AI in Research Workflows ── -->
-<section class="section" id="ai-in-workflows" style="background:var(--bg)">
-  <div class="container">
-    <div class="playbook-section">
-      <h2 style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
-        <span style="background:#e8f5e9;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🔬</span>
-        Using AI in Research Workflows
-      </h2>
-
-      <div class="playbook-grid" style="margin-bottom:24px">
-        <div class="playbook-item">
-          <h4>What It Is</h4>
-          <p>A principled framework for integrating AI into UX research activities — deciding where AI adds value, where human judgment is non-negotiable, and how to maintain research rigour throughout.</p>
+          <h4>📄 Explore further</h4>
+          <p><a href="https://www.microsoft.com/en-us/research/group/office-of-applied-research/" target="_blank" rel="noopener">Microsoft Office of Applied Research</a> — see how Microsoft researchers are using AI in practice. Also explore: <a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot docs</a> for what's possible.</p>
         </div>
         <div class="playbook-item">
-          <h4>When to Use It</h4>
-          <p>When setting up a new research project, onboarding team members to AI-assisted research, or building organisational guidelines for responsible AI use in research practice.</p>
+          <h4>💡 Project idea</h4>
+          <p>Create a "UXR AI toolkit" document for your team: 5 specific tasks where AI works well, 3 where it doesn't, and the prompts/tools to use. Keep it practical and opinionated. Update quarterly.</p>
         </div>
-        <div class="playbook-item">
-          <h4>The Centaur Model</h4>
-          <p>The most effective AI research approach: researcher directs AI strategy and exercises final judgment; AI handles breadth tasks (drafting, enumerating, organising). Neither solo is as effective.</p>
-        </div>
-      </div>
-
-      <h3 style="margin-bottom:16px">AI Use by Research Phase</h3>
-      <div style="overflow-x:auto">
-        <table style="width:100%;border-collapse:collapse;font-size:.88rem">
-          <thead>
-            <tr style="background:var(--accent)">
-              <th style="text-align:left;padding:12px 16px;border-bottom:2px solid var(--border)">Research Phase</th>
-              <th style="text-align:left;padding:12px 16px;border-bottom:2px solid var(--border)">Good AI Uses ✅</th>
-              <th style="text-align:left;padding:12px 16px;border-bottom:2px solid var(--border)">Keep Human ❌</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom:1px solid var(--border)">
-              <td style="padding:12px 16px;font-weight:600">Planning</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Draft discussion guides, suggest research questions, enumerate potential user groups</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Formulating the core research question, defining success criteria</td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border);background:#fafafa">
-              <td style="padding:12px 16px;font-weight:600">Data Collection</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Auto-transcription, real-time note suggestions, stimulus generation</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Interviewing participants, building rapport, probing responses</td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border)">
-              <td style="padding:12px 16px;font-weight:600">Analysis</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Initial theme enumeration, quote extraction, pattern flagging</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Interpreting context, validating themes, deciding what matters</td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border);background:#fafafa">
-              <td style="padding:12px 16px;font-weight:600">Reporting</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Draft executive summaries, slide structures, recommendation lists</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Prioritising findings, framing for stakeholders, making recommendations</td>
-            </tr>
-            <tr>
-              <td style="padding:12px 16px;font-weight:600">Repository</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Tagging, categorising, summarising past studies</td>
-              <td style="padding:12px 16px;color:var(--text-s)">Deciding relevance of past research to new contexts</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">🤖 Copilot Prompts</h3>
-      <div class="copilot-prompt-block" style="margin:0">
-        <div class="prompt-example">I'm planning a user study on [topic] for a [product type] team. My research question is: [RQ]. Draft a 45-minute moderated interview guide with: (1) warm-up questions, (2) scenario-based tasks, (3) probing questions for each task, and (4) closing questions. Flag any areas where I should probe further based on common research biases.</div>
-        <div class="prompt-example">Here are transcripts from 5 user interviews on [topic]: [paste transcripts]. Enumerate all distinct themes present in the data. For each theme: give it a descriptive name, provide 2 supporting quotes, and rate how many participants mentioned it (n=5). Do not interpret — just catalogue what's there.</div>
-      </div>
-
-      <h3 style="margin-bottom:12px;margin-top:24px">📚 Key Articles</h3>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="../Articles/cybernetic-teammate.html" class="btn btn-outline btn-sm" style="justify-content:flex-start">The Cybernetic Teammate — AI collaboration research ↗</a>
-        <a href="https://www.exponentialview.co/p/six-mental-models-for-working-with" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">Six Mental Models for Working with AI ↗</a>
-        <a href="https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">Making AI Work: Leadership, Lab, and Crowd ↗</a>
-        <a href="https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="justify-content:flex-start">Learn to Use AI Like a Surgeon ↗</a>
       </div>
     </div>
   </div>
@@ -300,13 +264,13 @@
   <div class="chat-panel">
     <div class="chat-head">
       <div class="chat-head-avatar">⚡</div>
-      <div class="chat-head-info"><strong>UXR Research Assistant</strong><span>Ask about the playbook</span></div>
+      <div class="chat-head-info"><strong>UXR Research Assistant</strong><span>Ask what to explore next</span></div>
     </div>
     <div class="chat-body">
-      <div class="chat-msg bot">Hi! The playbook covers 4 key areas: evaluating AI outputs, designing Copilot experiences, measuring trust in AI, and integrating AI into research workflows. What are you working on?</div>
+      <div class="chat-msg bot">Hi! Looking for your next deep dive? Tell me what topic you're curious about and I'll point you to the right articles and project ideas.</div>
     </div>
     <div class="chat-foot">
-      <input class="chat-input" type="text" placeholder="Ask about research methods…" />
+      <input class="chat-input" type="text" placeholder="What should I explore next?" />
       <button class="chat-send">Send</button>
     </div>
   </div>
@@ -318,30 +282,31 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div>
-        <h4>⚡ AI UXR Intelligence Hub</h4>
-        <p>Curated AI articles with structured insights for UX researchers. Playbook sections are grounded in real articles from the CTQ reading list.</p>
+        <h4>⚡ AI UXR Hub</h4>
+        <p>Curated AI articles for UX researchers — with suggested next steps, research ideas, and experiments to try.</p>
       </div>
       <div>
-        <h4>Playbook Sections</h4>
+        <h4>Deep Dive Topics</h4>
         <ul>
-          <li><a href="#evaluating-ai">Evaluating AI Outputs</a></li>
-          <li><a href="#designing-copilot">Designing Copilot Experiences</a></li>
-          <li><a href="#measuring-trust">Measuring Trust in AI</a></li>
-          <li><a href="#ai-in-workflows">AI in Research Workflows</a></li>
+          <li><a href="#trust-ai">Trust in AI</a></li>
+          <li><a href="#ai-collaboration">Human–AI Collaboration</a></li>
+          <li><a href="#evaluating-outputs">Evaluating AI Outputs</a></li>
+          <li><a href="#ai-adoption">AI Adoption & Behaviour</a></li>
+          <li><a href="#ai-tools-uxr">AI Tools for UXR</a></li>
         </ul>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
           <li><a href="../index.html">All Articles</a></li>
-          <li><a href="../Themes/evaluating-ai-outputs.html">Evaluating AI Outputs Theme</a></li>
-          <li><a href="../Themes/trust-safety.html">Trust &amp; Safety Theme</a></li>
+          <li><a href="../Themes/trust-safety.html">Trust & Safety Theme</a></li>
+          <li><a href="../Themes/human-ai-workflows.html">Human + AI Workflows</a></li>
           <li><a href="../Articles/llms-sycophancy.html">LLM Sycophancy Article</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 AI UXR Intelligence Hub</span>
+      <span>© 2026 AI UXR Hub</span>
       <a href="../index.html" style="color:rgba(255,255,255,.6)">← Back to Hub</a>
     </div>
   </div>
