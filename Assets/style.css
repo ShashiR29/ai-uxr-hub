@@ -354,6 +354,20 @@ li { margin-bottom: .35em; }
 }
 .chat-send:hover { background: var(--primary-d); }
 
+/* ---- Suggest Form ---- */
+.suggest-form { display: flex; flex-direction: column; gap: 12px; }
+.suggest-form label { font-weight: 600; font-size: .88rem; color: var(--text-h); margin-top: 4px; }
+.suggest-form input[type="url"],
+.suggest-form input[type="text"],
+.suggest-form select,
+.suggest-form textarea {
+  width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: var(--radius-s);
+  font-family: var(--font); font-size: .9rem; background: var(--surface); transition: border .2s;
+}
+.suggest-form input:focus,
+.suggest-form select:focus,
+.suggest-form textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(92,107,192,.12); }
+
 /* ---- Footer ---- */
 .footer {
   background: var(--text-h); color: rgba(255,255,255,.6);

@@ -176,6 +176,46 @@
 <!-- ── Toast notification ─────────────────────── -->
 <div id="toast" role="status" aria-live="polite"></div>
 
+<!-- ── Suggest an Article ──────────────────────── -->
+<section class="section" id="suggest" aria-labelledby="suggest-heading">
+  <div class="container" style="max-width:640px">
+    <div class="section-header">
+      <h2 id="suggest-heading">📬 Suggest an Article</h2>
+      <p>Found something useful? Share it with the UXR community.</p>
+    </div>
+    <form action="https://formsubmit.co/shashirekha@microsoft.com" method="POST" class="suggest-form">
+      <!-- FormSubmit config -->
+      <input type="hidden" name="_subject" value="New article suggestion — UXR AI Hub">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+
+      <label for="suggest-url">Article URL <span aria-hidden="true">*</span></label>
+      <input type="url" id="suggest-url" name="Article URL" placeholder="https://..." required>
+
+      <label for="suggest-theme">Which theme does it fit?</label>
+      <select id="suggest-theme" name="Theme">
+        <option value="">— Pick a theme —</option>
+        <option value="Future of Work">Future of Work</option>
+        <option value="AI Technology">AI Technology</option>
+        <option value="Trust & Safety">Trust & Safety</option>
+        <option value="Human + AI Workflows">Human + AI Workflows</option>
+        <option value="AI & Education">AI & Education</option>
+        <option value="Evaluating AI Outputs">Evaluating AI Outputs</option>
+        <option value="Other / New theme">Other / New theme</option>
+      </select>
+
+      <label for="suggest-why">Why is this relevant for UXRs? <span aria-hidden="true">*</span></label>
+      <textarea id="suggest-why" name="Why relevant" rows="3" placeholder="One-line summary of why UXRs should read this" required></textarea>
+
+      <label for="suggest-name">Your name</label>
+      <input type="text" id="suggest-name" name="Submitted by" placeholder="e.g. Alex Kim">
+
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;width:100%">Submit suggestion →</button>
+    </form>
+  </div>
+</section>
+
 <!-- ── Footer ─────────────────────────────────── -->
 <footer class="footer" role="contentinfo">
   <div class="footer-inner">
