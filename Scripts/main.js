@@ -318,6 +318,19 @@ function renderFeaturedThemes() {
   });
 }
 
+// ── Newly Added Section ───────────────────────
+function renderNewlyAddedSection() {
+  const grid = document.getElementById('newly-added-grid');
+  if (!grid) return;
+  const articles = allArticles.filter(a => a.isNew);
+  grid.innerHTML = '';
+  if (!articles.length) {
+    grid.closest('section').style.display = 'none';
+    return;
+  }
+  articles.forEach(a => grid.appendChild(createArticleCard(a)));
+}
+
 // ── AI Compete News Section ───────────────────────────
 function renderCompeteNewsSection() {
   const grid = document.getElementById('compete-news-grid');
@@ -536,6 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (isHomepage) {
     renderFeaturedThemes();
+    renderNewlyAddedSection();
     renderCompeteNewsSection();
     initFilterButtons();
     initSearch();

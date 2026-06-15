@@ -574,7 +574,8 @@ window.ARTICLES_DATA = [
     "link": "https://www.hindustantimes.com/opinion/shaping-india-s-liberal-arts-education-for-the-ai-age-101762873469932.html",
     "theme": "AI & Education",
     "filename": null,
-    "slug": "shaping-indias-liberal-arts-education-for-the-ai-age"
+    "slug": "shaping-indias-liberal-arts-education-for-the-ai-age",
+    "isNew": true
   },
   {
     "id": 65,
@@ -592,7 +593,8 @@ window.ARTICLES_DATA = [
     "link": "https://x.com/sebkrier/status/1994796202760528113",
     "theme": "Human + AI Workflows",
     "filename": null,
-    "slug": "beyond-the-single-genius-model-of-ai"
+    "slug": "beyond-the-single-genius-model-of-ai",
+    "isNew": true
   },
   {
     "id": 67,
@@ -1537,5 +1539,16 @@ window.ARTICLES_DATA = [
     "month": "January 2026",
     "filename": null,
     "slug": "us-cyber-defense-chief-accidentally-uploaded-secret-government-info-to"
+  },
+  {
+    "id": 178,
+    "title": "From Cow-Milking Robots to Weed-Zapping Lasers, Farmers Are Embracing A.I.",
+    "summary": "Three farmers share first-hand accounts of AI adoption — from robotic milkers that learn each cow’s flow, to laser weed-zappers and autonomous tractors. Their stories illuminate the human side of technology adoption: the leaps of faith, learning curves, and workforce transformation that come with AI in a physical domain.",
+    "link": "https://archive.ph/DnrWL",
+    "theme": "Future of Work",
+    "filename": null,
+    "slug": "from-cow-milking-robots-to-weed-zapping-lasers-farmers-ai",
+    "month": "June 2026",
+    "isNew": true
   }
 ];
