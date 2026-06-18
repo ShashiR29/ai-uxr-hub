@@ -115,6 +115,9 @@ function createArticleCard(article) {
   const sourceHtml = article.source
     ? `<span class="source-badge">${article.source}</span>`
     : '';
+  const newHtml = article.isNew
+    ? '<span class="new-badge">✨ New</span>'
+    : '';
 
   const read   = isRead(article.id);
   const opened  = isOpened(article.id);
@@ -129,6 +132,7 @@ function createArticleCard(article) {
     <div class="card-body">
       <div class="card-meta">
         <span class="theme-badge ${themeClass(article.theme)}">${article.theme}</span>
+        ${newHtml}
         ${monthHtml}
         ${sourceHtml}
         ${read ? '<span class="read-badge">✓ Read</span>' : (opened ? '<span class="opened-badge">👁 Opened</span>' : '')}
