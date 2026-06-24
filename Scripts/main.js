@@ -428,63 +428,110 @@ function renderThemePage(themeName) {
 }
 
 // ── Chatbot Widget ───────────────────────────────────────────────
-const CHAT_RULES = [
-  {
-    keywords: ['trust','safe','safety','risk','danger','harmful','bias'],
-    reply: `The **Trust & Safety in AI** theme has the most coverage. Key articles:\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agents ↗</a>\n• <a href="https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/" target="_blank">CEO uses ChatGPT to void contract ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-grandmother-jail-mistake" target="_blank">AI jails innocent grandmother ↗</a>`
-  },
-  {
-    keywords: ['evaluat','assess','measur','quality','output','hallucin'],
-    reply: 'For evaluating AI outputs try:\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/giving-ai-job-interview.html" target="_blank">Giving Your AI a Job Interview ↗</a>\n• <a href="https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/" target="_blank">Google AI Overviews wrong 10% of the time ↗</a>\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/llms-sycophancy.html" target="_blank">LLM Sycophancy ↗</a>'
-  },
-  {
-    keywords: ['work','job','employ','productiv','workflow','team','collab'],
-    reply: 'On AI and the future of work:\n• <a href="https://shashir29.github.io/ai-uxr-hub/Articles/cybernetic-teammate.html" target="_blank">The Cybernetic Teammate ↗</a>\n• <a href="https://futurism.com/artificial-intelligence/ai-brain-fry" target="_blank">AI Brain Fry: burnout from AI tools ↗</a>\n• <a href="https://fortune.com/2026/03/24/perplexity-ceo-ai-layoffs-not-bad-people-hate-jobs-entrepreneurship/" target="_blank">Perplexity CEO on AI layoffs ↗</a>'
-  },
-  {
-    keywords: ['education','learn','student','school','teach','university'],
-    reply: 'On AI in education:\n• <a href="https://www.techdirt.com/2026/03/06/were-training-students-to-write-worse-to-prove-theyre-not-robots-and-its-pushing-them-to-use-more-ai/" target="_blank">Training students to write worse ↗</a>\n• The **AI & Education** theme has more — use the filter buttons above.'
-  },
-  {
-    keywords: ['agent','autonom','agentic'],
-    reply: `On AI agents going rogue or behaving unexpectedly:\n• <a href="https://futurism.com/artificial-intelligence/ai-agent-crypto-mining" target="_blank">AI agent starts mining crypto ↗</a>\n• <a href="https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/" target="_blank">Meta's rogue AI agent Sev-1 incidents ↗</a>\n• <a href="https://www.cio.com/article/4152601/without-controls-an-ai-agent-can-cost-more-than-an-employee.html" target="_blank">AI agents can cost more than employees ↗</a>`
-  },
-  {
-    keywords: ['privacy','surveil','data','track','spy'],
-    reply: 'On AI and privacy:\n• <a href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/" target="_blank">Meta tracking employee keystrokes ↗</a>\n• <a href="https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/" target="_blank">Meta smart glasses lawsuit ↗</a>'
-  },
-  {
-    keywords: ['law','legal','court','sue','lawsuit','copyright'],
-    reply: 'On AI and legal issues:\n• <a href="https://techcrunch.com/2026/01/29/music-publishers-sue-anthropic-for-3b-over-flagrant-piracy-of-20000-works/" target="_blank">Music publishers sue Anthropic $3B ↗</a>\n• <a href="https://www.reuters.com/legal/litigation/sullivan-cromwell-law-firm-apologizes-ai-hallucinations-court-filing-2026-04-21/" target="_blank">Law firm apologizes for AI hallucinations ↗</a>\n• <a href="https://techcrunch.com/2026/02/15/longtime-npr-host-david-greene-sues-google-over-notebooklm-voice/" target="_blank">NPR host sues Google over NotebookLM voice ↗</a>'
-  },
-  {
-    keywords: ['playbook','prompt','framework','method','how to','research'],
-    reply: 'Check the <a href="./PLaybook/index.html">UX Research Playbook ↗</a> for structured frameworks and Copilot prompts designed for UX researchers.'
-  },
-  {
-    keywords: ['save','saved','bookmark','read','progress','stat'],
-    reply: 'You can **Save** any article using the ☆ button on the card, and **Mark as Read** using the ○ button. Your reading stats are shown in the panel on the right side of the page.'
-  },
-];
+// Theme synonyms used to recognise what the user is asking about
+const CHAT_THEMES = {
+  'Future of Work':        { emoji: '💼', words: ['work','job','jobs','employ','employment','employee','career','careers','workforce','productivity','layoff','layoffs','automation','enterprise','adoption','company','companies','organisation','organization'] },
+  'AI Technology':         { emoji: '🤖', words: ['technology','tech','model','models','llm','llms','gpt','agent','agents','agentic','tooling','infrastructure','capability','capabilities','reasoning','multimodal'] },
+  'Trust & Safety in AI':  { emoji: '🛡️', words: ['trust','safety','safe','risk','risks','harm','harmful','bias','biased','danger','dangerous','security','misuse','deception','reliable','reliability','privacy','surveillance'] },
+  'Human + AI Workflows':  { emoji: '🤝', words: ['workflow','workflows','collaborate','collaboration','teammate','copilot','pairing','augment','augmentation','assistant','assisted','human'] },
+  'AI & Education':        { emoji: '🎓', words: ['education','learn','learning','student','students','school','schools','teach','teaching','teacher','university','academic','classroom','exam','homework'] },
+  'Evaluating AI Outputs': { emoji: '🔍', words: ['evaluate','evaluating','evaluation','assess','assessment','measure','quality','output','outputs','accuracy','accurate','hallucinate','hallucination','benchmark','testing','validate','validation'] },
+};
 
-const FALLBACK_REPLIES = [
-  'Try using the **search bar** or **theme filter buttons** to find articles on that topic.',
-  'I\'m best at finding articles by topic. Try keywords like "trust", "agents", "education", or "privacy".',
-  'The **All Articles** section below is searchable — type a keyword to filter instantly.',
-];
-let fallbackIdx = 0;
+const CHAT_STOPWORDS = new Set(['a','an','the','is','are','am','be','do','does','did','how','what','which','who','whom','where','when','why','can','could','would','should','i','you','we','they','it','to','for','of','on','at','in','about','me','my','your','our','with','and','or','but','any','some','that','this','these','those','find','show','tell','give','get','got','want','wanted','need','looking','look','please','help','article','articles','read','reads','reading','uxr','uxrs','researcher','researchers','more','most','best','good','great','topic','topics','related','around','covering','cover','have','has','there','their','from','into','like','know']);
+
+function chatTokens(str) {
+  return (str || '').toLowerCase().match(/[a-z0-9]+/g) || [];
+}
+
+function chatArticles() {
+  return (window.ARTICLES_DATA && window.ARTICLES_DATA.length) ? window.ARTICLES_DATA : (allArticles || []);
+}
+
+function detectTheme(q) {
+  let best = null, bestScore = 0;
+  for (const [name, info] of Object.entries(CHAT_THEMES)) {
+    let s = 0;
+    for (const w of info.words) if (q.includes(w)) s++;
+    if (s > bestScore) { bestScore = s; best = name; }
+  }
+  return best;
+}
+
+// Relevance score: title matches weigh most, then summary, then theme
+function scoreArticles(tokens) {
+  const keys = [...new Set(tokens.filter(t => t.length > 2 && !CHAT_STOPWORDS.has(t)))];
+  if (!keys.length) return [];
+  return chatArticles().map(a => {
+    const title   = (a.title || '').toLowerCase();
+    const summary = (a.summary || '').toLowerCase();
+    const theme   = (a.theme || '').toLowerCase();
+    let score = 0;
+    for (const k of keys) {
+      if (title.includes(k))   score += 5;
+      if (summary.includes(k)) score += 2;
+      if (theme.includes(k))   score += 1;
+    }
+    return { a, score };
+  }).filter(x => x.score > 0).sort((x, y) => y.score - x.score);
+}
+
+function formatArticleList(articles) {
+  return articles.map(a =>
+    `• <a href="${a.link || '#'}" target="_blank" rel="noopener noreferrer">${a.title} ↗</a>`
+  ).join('\n');
+}
 
 function getBotReply(text) {
-  const q = text.toLowerCase();
-  for (const rule of CHAT_RULES) {
-    if (rule.keywords.some(k => q.includes(k))) return rule.reply;
+  const q = (text || '').toLowerCase().trim();
+  const tokens = chatTokens(q);
+
+  // Conversational intents
+  if (tokens.length <= 3 && tokens.some(t => ['hi','hello','hey','yo','hiya','howdy','sup'].includes(t))) {
+    return 'Hey! 👋 Tell me a topic — like <em>trust</em>, <em>AI agents</em>, <em>education</em>, or <em>evaluating outputs</em> — and I\'ll pull up the most relevant articles.';
   }
-  // search allArticles for a title match
-  const match = allArticles.find(a => a.title.toLowerCase().split(' ').some(w => w.length > 4 && q.includes(w)));
-  if (match) {
-    return `I found a relevant article: <strong>${match.title}</strong><br><a href="${match.link}" target="_blank" rel="noopener noreferrer">Read it here ↗</a>`;
+  if (/\b(thanks|thank you|thank u|thx|ty|cheers|appreciate)\b/.test(q)) {
+    return 'Anytime! 😊 Ask me about another topic whenever you\'re ready.';
   }
-  return FALLBACK_REPLIES[fallbackIdx++ % FALLBACK_REPLIES.length];
+  if (/\b(help|what can you do|how do you work|how do i use)\b/.test(q)) {
+    return 'I search all the articles for you. Try things like:\n• "articles about AI trust"\n• "how do I evaluate AI outputs?"\n• "future of work"\nYou can also **Save** (☆) and **Mark as read** (○) any article.';
+  }
+  if (/\b(save|saved|bookmark|mark as read|progress|my stats|reading stat)\b/.test(q)) {
+    return 'You can **Save** any article with the ☆ button and **Mark as read** with the ○ button. Your reading stats appear in the panel on the right of the homepage.';
+  }
+  if (/\b(go deeper|playbook|deep dive|next step|next steps|experiment|prompt|prompts|framework)\b/.test(q)) {
+    return 'Check out <a href="./PLaybook/index.html">Go Deeper ↗</a> for reading paths, research ideas, experiments to try, and Copilot prompts.';
+  }
+
+  // Article relevance search across the full dataset
+  const scored = scoreArticles(tokens);
+  const theme  = detectTheme(q);
+
+  if (scored.length) {
+    const top = scored.slice(0, 3).map(x => x.a);
+    const intro = top.length === 1
+      ? 'I found one article that fits'
+      : `Here ${top.length === 2 ? 'are 2 reads' : 'are 3 reads'} that match`;
+    let reply = `${intro}:\n${formatArticleList(top)}`;
+    if (theme) {
+      const count = chatArticles().filter(a => a.theme === theme).length;
+      if (count > top.length) {
+        reply += `\n\nThere are ${count} articles in the **${theme}** theme — use the filter buttons to see them all.`;
+      }
+    }
+    return reply;
+  }
+
+  // No keyword hits, but we recognised a theme
+  if (theme) {
+    const info = CHAT_THEMES[theme];
+    const inTheme = chatArticles().filter(a => a.theme === theme).slice(0, 3);
+    if (inTheme.length) {
+      return `${info.emoji} The **${theme}** theme is a great fit. A few to start with:\n${formatArticleList(inTheme)}`;
+    }
+  }
+
+  return 'I couldn\'t find a direct match for that. Try a keyword like <em>trust</em>, <em>agents</em>, <em>productivity</em>, <em>education</em>, or <em>hallucination</em> — or use the theme filters above to browse.';
 }
 
 function initChatbot() {
