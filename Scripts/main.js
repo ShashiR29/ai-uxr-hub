@@ -4,6 +4,15 @@
 
 'use strict';
 
+// ── Dark mode (apply saved preference ASAP to reduce flash) ──────
+(function applySavedColorMode() {
+  try {
+    if (localStorage.getItem('colorMode') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  } catch (e) { /* localStorage unavailable */ }
+})();
+
 // ── Config ──────────────────────────────────────────────────────
 const SAVE_KEY   = 'aiuxr-saved-articles';
 const READ_KEY   = 'aiuxr-read-articles';
@@ -237,6 +246,8 @@ function refreshSaveButtons() {
 let allArticles = [];
 let activeThemeFilter = 'all';
 let searchQuery = '';
+const ARTICLES_PER_PAGE = 18;
+let homepageShown = ARTICLES_PER_PAGE;
 
 // Uses window.ARTICLES_DATA from articles-data.js (works with file:// and http://)
 function loadArticles() {
@@ -276,7 +287,30 @@ function renderArticlesGrid(containerId, articles) {
 }
 
 function renderHomepageArticles() {
-  renderArticlesGrid('articles-grid', getFilteredArticles());
+  const filtered = getFilteredArticles();
+  renderArticlesGrid('articles-grid', filtered.slice(0, homepageShown));
+  updateShowMoreButton(filtered.length);
+}
+
+function updateShowMoreButton(total) {
+  const btn = document.getElementById('articles-show-more');
+  if (!btn) return;
+  const remaining = total - homepageShown;
+  if (remaining > 0) {
+    btn.style.display = '';
+    btn.textContent = `Show more articles (${remaining} more) ↓`;
+  } else {
+    btn.style.display = 'none';
+  }
+}
+
+function initShowMore() {
+  const btn = document.getElementById('articles-show-more');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    homepageShown += ARTICLES_PER_PAGE;
+    renderHomepageArticles();
+  });
 }
 
 // ── Theme Filter Buttons ────────────────────────────────────────
@@ -286,6 +320,7 @@ function initFilterButtons() {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       activeThemeFilter = btn.dataset.theme || 'all';
+      homepageShown = ARTICLES_PER_PAGE;
       renderHomepageArticles();
     });
   });
@@ -297,6 +332,7 @@ function initSearch() {
   if (!input) return;
   input.addEventListener('input', () => {
     searchQuery = input.value;
+    homepageShown = ARTICLES_PER_PAGE;
     renderHomepageArticles();
   });
 }
@@ -585,10 +621,34 @@ function markActiveNav() {
   });
 }
 
+// ── Dark mode toggle ────────────────────────────────────────────
+function initThemeToggle() {
+  const navLinks = document.querySelector('.nav-links');
+  if (!navLinks) return;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'theme-toggle-btn';
+  const sync = () => {
+    const dark = document.documentElement.classList.contains('dark');
+    btn.textContent = dark ? '☀️' : '🌙';
+    btn.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    btn.setAttribute('aria-label', btn.title);
+    btn.setAttribute('aria-pressed', String(dark));
+  };
+  sync();
+  btn.addEventListener('click', () => {
+    const dark = document.documentElement.classList.toggle('dark');
+    try { localStorage.setItem('colorMode', dark ? 'dark' : 'light'); } catch (e) { /* noop */ }
+    sync();
+  });
+  navLinks.appendChild(btn);
+}
+
 // ── Init ────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   markActiveNav();
+  initThemeToggle();
   initChatbot();
 
   const isHomepage  = !!document.getElementById('articles-grid');
@@ -604,6 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCompeteNewsSection();
     initFilterButtons();
     initSearch();
+    initShowMore();
     renderHomepageArticles();
     renderSavedSection();
     renderReadingStats();

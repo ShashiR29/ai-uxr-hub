@@ -543,3 +543,73 @@ li { margin-bottom: .35em; }
   .hero { padding: 48px 0 36px; }
   .section { padding: 36px 0; }
 }
+
+/* =============================================
+   Dark mode
+   ============================================= */
+.theme-toggle-btn {
+  background: none; border: 1.5px solid var(--border); border-radius: 99px;
+  width: 40px; height: 32px; cursor: pointer; font-size: 1rem; line-height: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--text); margin-left: 6px;
+  transition: background .15s, border-color .15s, transform .15s;
+}
+.theme-toggle-btn:hover { background: var(--accent); border-color: var(--primary); transform: scale(1.05); }
+
+html.dark {
+  --bg:        #0f172a;
+  --surface:   #1e293b;
+  --surface-2: #243244;
+  --primary:   #38bdf8;
+  --primary-d: #7dd3fc;
+  --accent:    #16323d;
+  --teal:      #22d3ee;
+  --teal-l:    #67e8f9;
+  --text-h:    #f1f5f9;
+  --text:      #cbd5e1;
+  --text-s:    #94a3b8;
+  --border:    #334155;
+  --shadow:    0 2px 12px rgba(0,0,0,.45);
+  --shadow-h:  0 12px 30px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+
+/* Nav becomes translucent dark */
+html.dark .nav { background: rgba(15,23,42,.78); border-bottom-color: rgba(51,65,85,.7); }
+
+/* Footer + toast keep a dark surface (they use --text-h as bg in light mode) */
+html.dark .footer { background: #0b1220; }
+html.dark #toast  { background: #334155; }
+
+/* Form controls need explicit light text on the dark surface */
+html.dark .chat-input,
+html.dark .search-input,
+html.dark .suggest-form input,
+html.dark .suggest-form select,
+html.dark .suggest-form textarea { color: var(--text); }
+html.dark input::placeholder,
+html.dark textarea::placeholder { color: var(--text-s); }
+
+/* Chatbot */
+html.dark .chat-body { background: #16202e; }
+html.dark .chat-msg.bot { background: #334155; color: var(--text-h); }
+
+/* Reading stats panel */
+html.dark .reading-stats-panel { background: linear-gradient(135deg,#13283d 0%,#15324a 100%); border-color: #2b5a86; border-left-color: #38bdf8; }
+html.dark .stats-heading { color: #93c5fd; }
+
+/* Compete news band */
+html.dark .compete-news-section { background: linear-gradient(135deg,#2a2410 0%,#1d1908 100%); border-top-color: #a16207; border-bottom-color: #a16207; }
+
+/* Newly added band */
+html.dark .newly-added-section { background: radial-gradient(600px 300px at 100% 0%, rgba(34,211,238,.10), transparent 60%), linear-gradient(135deg,#12303a 0%,#0e2730 100%); border-top-color: #0e7490; border-bottom-color: #0e7490; }
+
+/* Copilot prompt block + code examples */
+html.dark .copilot-prompt-block { background: linear-gradient(135deg,#1f2540 0%,#16263b 100%); border-color: #3a4670; }
+html.dark .prompt-example { background: #0f172a; border-color: #3a4670; color: var(--text-h); }
+
+/* Skeleton shimmer */
+html.dark .skeleton { background: linear-gradient(90deg,#1e293b 25%,#27364a 50%,#1e293b 75%); background-size: 400px 100%; }
+
+/* Unsave hover stays legible */
+html.dark .btn-unsave:hover { color: #fca5a5; background: rgba(229,57,53,.18); }
